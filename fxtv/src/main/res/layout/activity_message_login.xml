@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include layout="@layout/view_actionbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/activity_message_login_phone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/bg_login_edittext"
+        android:hint="请输入已注册的手机号"
+        android:maxLength="11"
+        android:imeOptions="actionNext"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:textColor="@color/text_color_default" 
+        android:inputType="number"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical" >
+
+        <EditText
+            android:id="@+id/activity_message_login_testcode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/bg_login_edittext"
+            android:gravity="center_vertical"
+            android:hint="验证码"
+            android:maxLength="4"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColor="@color/text_color_default"
+            android:inputType="number"
+            android:imeOptions="actionDone"
+             />
+
+        <Button
+            android:id="@+id/activity_message_Login_send_testcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:background="@drawable/selector_btn2"
+            android:text="发送验证码"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/text_size16" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/activity_message_Login_login"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector_btn2"
+        android:text="@string/activity_login_btn_text"
+        android:textColor="@color/text_color_white"
+        android:textSize="@dimen/text_size20" />
+
+    </LinearLayout>
+</LinearLayout>

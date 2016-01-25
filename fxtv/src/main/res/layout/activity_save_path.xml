@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/view_actionbar" />
+
+    <TextView
+        android:id="@+id/mobile_rom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_bg_frame_bottom"
+        android:drawablePadding="10dp"
+        android:drawableRight="@drawable/vote_check"
+        android:gravity="left"
+        android:padding="10dp"
+        android:text="手机内存"
+        android:textColor="@color/text_color_default"
+        android:textSize="@dimen/text_size16" />
+
+    <TextView
+        android:id="@+id/mobile_SD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_bg_frame_bottom"
+        android:drawablePadding="10dp"
+        android:drawableRight="@drawable/vote_check"
+        android:gravity="left"
+        android:padding="10dp"
+        android:text="外部存储卡"
+        android:textColor="@color/text_color_default"
+        android:textSize="@dimen/text_size16" />
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_actionbar" />
+
+    <com.fxtv.framework.widget.xlistview.XListView
+        android:id="@+id/activity_my_video_cneter_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:divider="@null"
+        android:listSelector="@color/color_transparency"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+
+</LinearLayout>

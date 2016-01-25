@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/act_answer_actionbar"
+        layout="@layout/view_actionbar" />
+
+
+    <com.fxtv.framework.widget.xlistview.XListView
+        android:id="@+id/activity_anchor_act_answer_ListView"
+        style="@style/style_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/act_answer_actionbar"
+        android:background="@color/text_color_white"
+        />
+
+
+   <include
+        android:id="@+id/linear_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/view_topic_bottom_layout"
+       android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

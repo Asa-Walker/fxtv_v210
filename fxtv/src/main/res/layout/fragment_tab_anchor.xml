@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/act_answer_actionbar"
+        layout="@layout/view_actionbar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="5dip"
+        android:text="@string/anchor_lable2"
+        android:textColor="@color/text_color3"
+        android:textSize="@dimen/text_size18" />
+
+    <GridView
+        android:id="@+id/fragment_tab_anchor_all_gv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:listSelector="#00000000"
+        android:minHeight="100dip"
+        android:numColumns="4" />
+
+    <RadioGroup
+        android:id="@+id/fragment_tab_anchor_all_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="#CCCCCC"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/fragment_tab_anchor_all_rb1"
+            style="@style/style_radiobutton2"
+            android:layout_weight="1"
+            android:text="@string/anchor_tab6" />
+
+        <RadioButton
+            android:id="@+id/fragment_tab_anchor_all_rb2"
+            style="@style/style_radiobutton2"
+            android:layout_weight="1"
+            android:text="@string/anchor_tab7" />
+
+        <RadioButton
+            android:id="@+id/fragment_tab_anchor_all_rb3"
+            style="@style/style_radiobutton2"
+            android:layout_weight="1"
+            android:text="@string/anchor_tab8" />
+
+        <RadioButton
+            android:id="@+id/fragment_tab_anchor_all_rb4"
+            style="@style/style_radiobutton2"
+            android:layout_weight="1"
+            android:text="@string/anchor_tab9" />
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/fragment_tab_anchor_all_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dip" />
+
+</LinearLayout>

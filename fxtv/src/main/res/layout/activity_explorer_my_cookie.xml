@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/activity_self_actonbar"
+        layout="@layout/view_actionbar" />
+
+    <com.fxtv.framework.widget.xlistview.XListView
+        android:id="@+id/activity_my_cookie_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:divider="@null"
+        android:overScrollMode="never"
+        android:listSelector="@color/color_transparency"
+        android:scrollbars="none" />
+
+</LinearLayout>

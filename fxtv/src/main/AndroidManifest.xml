@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.fxtv.threebears"
+    android:versionCode="210"
+    android:versionName="2.1.0">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.hardware.sensor.accelerometer" />
+    <uses-permission android:name="android.intent.action.GET_CONTENT" />
+    <!-- 闪光灯权限，扫码可能用到 -->
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- 往sdcard中写入数据的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE" /> -->
+    <!-- 在sdcard中创建/删除文件的权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <!-- 悬浮框所需权限 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:name=".frame.CustomApplication"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppBaseTheme"
+        tools:replace="name,icon,label,theme">
+
+        <!-- 五幅图片的广告页面 -->
+        <activity android:name=".activity.other.ActivityGuide">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- <activity android:name=".Test" />-->
+
+        <!-- 首页 -->
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.PageIndicatorSelf">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="fxtv" />
+                <data android:host="1" />
+            </intent-filter>
+        </activity>
+        <!-- loading引导页 -->
+        <activity
+            android:name=".activity.other.ActivityAdvertisement"
+            android:screenOrientation="portrait" />
+
+        <!-- 意见反馈 -->
+        <activity
+            android:name=".activity.user.other.ActivitySuggestion"
+            android:screenOrientation="portrait" />
+
+        <!-- 关于我们 -->
+        <activity
+            android:name=".activity.other.ActivityAboutUs"
+            android:screenOrientation="portrait" />
+
+        <!-- 使用协议 -->
+        <activity
+            android:name=".activity.user.other.ActivityUseAgreement"
+            android:screenOrientation="portrait" />
+
+        <!-- 登陆 -->
+        <activity
+            android:name=".activity.user.login.ActivityLogin"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.login.xue" />
+            </intent-filter>
+        </activity>
+
+        <!-- 收藏 -->
+        <activity
+            android:name=".activity.user.ActitvityFavorites"
+            android:screenOrientation="portrait" />
+
+        <!-- 头像图库 -->
+        <activity
+            android:name=".activity.user.userinfo.ActivityImageDepot"
+            android:screenOrientation="portrait" />
+
+        <!-- 记录管理 -->
+        <activity
+            android:name=".activity.user.ActivityHistory"
+            android:screenOrientation="portrait" />
+
+        <!-- 欢迎页面 -->
+        <activity
+            android:name=".activity.other.ActivityWelcome"
+            android:screenOrientation="portrait" />
+
+        <!-- 播放页面 -->
+        <!-- android:windowSoftInputMode="adjustPan|stateHidden" -->
+        <activity
+            android:name=".activity.player.ActivityVideoPlay"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="fxtv" />
+                <data android:host="3" />
+            </intent-filter>
+        </activity>
+        <!-- 微信回调类 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent"
+            android:windowSoftInputMode="adjustPan|adjustUnspecified|stateHidden" />
+
+        <!-- 缓存视频播放页面 -->
+        <activity
+            android:name=".activity.player.ActivityVideoPlayLandscape"
+            android:configChanges="screenSize|orientation|uiMode|screenLayout|layoutDirection"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <!-- 游戏Tab、游戏详情 -->
+        <activity
+            android:name=".activity.game.ActivityGame"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.PageIndicatorSelf">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="fxtv" />
+                <data android:host="2" />
+            </intent-filter>
+        </activity>
+
+        <!-- 主播 空间 -->
+        <activity
+            android:name=".activity.anchor.ActivityAnchorZone"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="fxtv" />
+                <data android:host="4" />
+            </intent-filter>
+        </activity>
+
+        <!-- 主播 留言 -->
+        <activity
+            android:name=".activity.anchor.ActivityAnchorMessage"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <!-- ActivityVideoList -->
+        <activity
+            android:name=".activity.self.ActivityVideoList"
+            android:screenOrientation="portrait" />
+
+        <!-- 搜索 -->
+        <activity
+            android:name=".activity.search.ActivitySearch"
+            android:screenOrientation="portrait" />
+
+        <!-- 新搜索 -->
+        <activity
+            android:name=".activity.search.ActivitySearchFor"
+            android:screenOrientation="portrait" />
+
+        <!-- ActivityMessage -->
+        <activity
+            android:name=".activity.message.ActivityChatList"
+            android:screenOrientation="portrait" />
+
+        <!-- ActivityMessageContent -->
+        <activity
+            android:name=".activity.message.ActivityChat"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <!-- 新增的主播空间的视频列表 -->
+        <activity
+            android:name=".activity.anchor.ActivityAnchorVideoList"
+            android:screenOrientation="portrait" />
+
+        <!-- 新增的主播空间的专辑的视频的列表 -->
+        <activity
+            android:name=".activity.anchor.ActivityAnchorAblumVieoList"
+            android:screenOrientation="portrait" />
+
+        <!-- 新增主播动态 -->
+        <activity
+            android:name=".activity.anchor.ActivityAnchorLatestAct"
+            android:screenOrientation="portrait" />
+
+        <!-- 新增主播动态 关于回复界面 -->
+        <activity
+            android:name=".activity.anchor.ActivityAnchorActAnswer"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <!-- 图片查看器界面 -->
+        <activity
+            android:name=".activity.explorer.ActivityExplorerImagePager"
+            android:screenOrientation="portrait" />
+
+        <!-- 绑定手机 -->
+        <activity
+            android:name=".activity.user.userinfo.ActivityBindPhone"
+            android:screenOrientation="portrait" />
+
+        <!-- 个人信息界面 -->
+        <activity
+            android:name=".activity.user.userinfo.ActivityPersonalInformation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="fxtv" />
+                <data android:host="5" />
+            </intent-filter>
+        </activity>
+        <!-- 感兴趣的游戏 -->
+        <activity
+            android:name=".activity.user.userinfo.ActivityIntrestingGame"
+            android:screenOrientation="portrait" />
+
+        <!-- 我的等级界面 -->
+        <activity
+            android:name=".activity.user.userinfo.ActivityMyLevel"
+            android:screenOrientation="portrait" />
+
+        <!-- 我的饼干界面 -->
+        <activity
+            android:name=".activity.user.userinfo.ActivityMyBiscuit"
+            android:screenOrientation="portrait" />
+
+        <!-- 我的熊掌界面 -->
+        <activity
+            android:name=".activity.user.userinfo.ActivityMyWolfSkin"
+            android:screenOrientation="portrait" />
+
+        <!-- 我的抽奖 -->
+        <activity
+            android:name=".activity.user.ActivityMyPresent"
+            android:screenOrientation="portrait" />
+
+        <!-- 短信登录 -->
+        <activity
+            android:name=".activity.user.login.ActivityMessageLogin"
+            android:screenOrientation="portrait" />
+
+        <!-- 找回帐号 -->
+        <activity
+            android:name=".activity.user.userinfo.ActivityFindPassword"
+            android:screenOrientation="portrait" />
+
+        <!-- 找回帐号第二步 -->
+        <activity
+            android:name=".activity.user.userinfo.ActivityFindPasswordNextstep"
+            android:screenOrientation="portrait" />
+
+        <!-- 设置界面 -->
+        <activity
+            android:name=".activity.user.settings.ActivitySetup"
+            android:screenOrientation="portrait" />
+        <!-- 我的消息界面 -->
+        <activity
+            android:name=".activity.user.ActivityMyMessage"
+            android:screenOrientation="portrait" />
+        <!--主播页的投票中心-->
+        <activity
+            android:name=".activity.anchor.ActivityAnchorVote"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="fxtv" />
+                <data android:host="8" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.anchor.ActivityAnchorVoteHistory"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.explorer.ActivityExplorerAnchorCircle"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="fxtv" />
+                <data android:host="14" />
+            </intent-filter>
+        </activity>
+        <!-- 扫二维码的界面 -->
+        <activity
+            android:name=".activity.explorer.ActivityQRCode"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.explorer.ActivityExplorerInstruction"
+            android:screenOrientation="portrait" />
+        <!-- 活动中心 -->
+        <activity
+            android:name=".activity.explorer.ActivityExplorerMyCookie"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.explorer.ActivityExplorerTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="fxtv" />
+                <data android:host="9" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.self.ActivitySelfMyOrder"
+            android:screenOrientation="portrait" />
+        <!-- 活动详情页 -->
+        <activity
+            android:name=".activity.explorer.ActivityMissionDetail"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="fxtv" />
+                <data android:host="7" />
+            </intent-filter>
+        </activity>
+        <!-- 网页界面 -->
+        <activity
+            android:name=".activity.h5.ActivityWebView"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="fxtv" />
+                <data android:host="6" />
+            </intent-filter>
+        </activity>
+
+        <!-- 注册 -->
+        <activity
+            android:name=".activity.user.register.ActivityRegisterFirstStep"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.user.register.ActivityRegisterNextStep"
+            android:screenOrientation="portrait" />
+        <!-- 保存路径 -->
+        <activity
+            android:name=".activity.user.settings.ActivitySavaPath"
+            android:screenOrientation="portrait" />
+        <!-- 清晰度选择 -->
+        <activity
+            android:name=".activity.user.settings.ActivityChooseDifinition"
+            android:screenOrientation="portrait" />
+        <!-- 新手引导页一 -->
+        <activity
+            android:name=".activity.other.ActivityGuideStepFirst"
+            android:screenOrientation="portrait" />
+        <!-- 新手引导页二 -->
+        <activity
+            android:name=".activity.other.ActivityGuideStepSecond"
+            android:screenOrientation="portrait" />
+        <!-- 设备详情 -->
+        <activity
+            android:name=".activity.user.userinfo.ActivityDeviceInfo"
+            android:screenOrientation="portrait" />
+        <!-- 新版主播空间（全部主播） -->
+        <activity
+            android:name=".activity.anchor.ActivityAnchorSet"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.PageIndicatorSelf">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="fxtv" />
+                <data android:host="15" />
+            </intent-filter>
+
+        </activity>
+        <!-- 新增专辑列表） -->
+        <activity
+            android:name=".activity.anchor.ActivityAblumList"
+            android:screenOrientation="portrait" />
+        <!-- 热点投票 -->
+        <activity
+            android:name=".activity.explorer.ActivityHotVote"
+            android:screenOrientation="portrait" />
+        <!-- 新版缓存页 -->
+        <activity
+            android:name=".activity.user.download.ActivityNewMyCache"
+            android:screenOrientation="portrait" />
+        <!-- 新版排行榜 -->
+        <activity
+            android:name=".activity.explorer.ActivityRankList"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="fxtv" />
+                <data android:host="11" />
+            </intent-filter>
+        </activity>
+        <!-- 新版热点投票详情 -->
+        <activity
+            android:name=".activity.explorer.ActivityVoteDetail"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="fxtv" />
+                <data android:host="12" />
+            </intent-filter>
+
+        </activity>
+        <!-- 新版飞熊杯 -->
+        <activity
+            android:name=".activity.explorer.ActivityFeiXiongCup"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}" />
+
+        <!-- 新版发表动态界面 -->
+        <activity
+            android:name=".activity.explorer.ActivityExplorerAnser"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- 新版热聊界面 -->
+        <activity
+            android:name=".activity.explorer.ActivityExplorerHotChat"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="fxtv" />
+                <data android:host="10" />
+            </intent-filter>
+
+        </activity>
+        <!-- 话题详情 -->
+        <activity
+            android:name=".activity.explorer.ActivityTopicInfo"
+            android:screenOrientation="portrait" />
+        <!-- 话题-发吐槽 -->
+        <activity
+            android:name=".activity.explorer.ActivityPostTopic"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!--热聊话题评论界面-->
+        <activity
+            android:name=".activity.explorer.ActivityExplorerHotAnser"
+            android:screenOrientation="portrait" />
+
+        <!--新版发现页视频专题-->
+        <activity
+            android:name=".activity.explorer.ActivityEcplorerVideoCenter"
+            android:screenOrientation="portrait" />
+
+        <!--赚饼干(h5小游戏) -->
+        <activity
+            android:name=".activity.explorer.ActivityExplorerH5Gams"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".service.DownloadVideoService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="1000"
+            android:stopWithTask="false" />
+    </application>
+
+</manifest>

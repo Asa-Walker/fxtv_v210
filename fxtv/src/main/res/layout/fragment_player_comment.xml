@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/shape_bg_frame_bottom"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="视频评论"
+            android:textColor="@color/text_color_default"
+            android:textSize="@dimen/text_size18" />
+
+        <TextView
+            android:id="@+id/video_play_comment_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/icon_arrow_right1"
+            android:gravity="right|center_vertical"
+            android:text="共132条评论"
+            android:textColor="@color/text_color_gray"
+            android:textSize="@dimen/text_size12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/text_color_white"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <com.fxtv.framework.widget.circular.CircularImage
+            android:id="@+id/video_play_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/video_play_comment_text"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_player_comment"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:text="我也来说两句"
+            android:textColor="@color/text_color_gray"
+            android:textSize="@dimen/text_size12" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_line" />
+
+    <com.fxtv.framework.widget.MyListView
+        android:id="@+id/activity_new_video_comment_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/text_color_white"
+        android:divider="@null" />
+
+</LinearLayout>

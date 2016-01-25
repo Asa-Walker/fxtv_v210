@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg">
+
+    <include
+        android:id="@+id/view_actionbar_layout_now"
+        layout="@layout/view_actionbar" />
+
+    <TextView
+        android:id="@+id/vote_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_actionbar_layout_now"
+        android:layout_margin="10dp"
+        android:textColor="#000000"
+        android:visibility="gone"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/vote_toupiaoshu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vote_info"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/text_color_gray"
+        android:visibility="gone"
+        android:textSize="10sp" />
+
+    <ListView
+        android:id="@+id/vote_result"
+        style="@style/style_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vote_toupiaoshu" />
+
+    <RelativeLayout
+        android:id="@+id/vote_submit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:visibility="gone"
+        android:layout_below="@id/vote_result">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_line" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="提交"
+            android:textColor="@color/main_color"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/xlistview_empty"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@id/view_actionbar_layout_now"
+        android:id="@+id/view_empty"
+        />
+
+</RelativeLayout>

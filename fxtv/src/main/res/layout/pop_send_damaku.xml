@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottom"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="1dp"
+    android:visibility="visible" >
+
+    <Button
+        android:id="@+id/comment_btn_send"
+        android:layout_width="80dp"
+        android:layout_height="40dip"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape_rectangle_circular_main"
+        android:text="发送"
+        android:textColor="@color/text_color_white"
+        android:textSize="@dimen/text_size16"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/fragment_play_page_comment_et_msg"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@id/comment_btn_send"
+        android:background="@drawable/bg_editext_comment"
+        android:gravity="center_vertical"
+        android:hint="说点什么吧"
+        android:imeOptions="flagNoExtractUi"
+        android:paddingLeft="2dp"
+        android:textColor="@color/text_color_default"
+        android:textSize="@dimen/text_size14" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="5dp"
+        android:src="@drawable/icon_arrow_left1" />
+
+</RelativeLayout>

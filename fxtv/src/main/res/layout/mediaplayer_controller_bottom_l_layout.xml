@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#cc000000"
+    android:padding="5dip">
+
+    <RelativeLayout
+        android:id="@+id/video_bottom_layout_l_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:padding="10dip">
+
+        <ImageView
+            android:id="@+id/btn_start"
+            android:layout_width="26dip"
+            android:layout_height="26dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:src="@drawable/play" />
+
+        <TextView
+            android:id="@+id/pos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:layout_toEndOf="@id/btn_start"
+            android:layout_toRightOf="@id/btn_start"
+            android:text="00:00/"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dip"
+            android:layout_marginRight="10dp"
+            android:layout_toEndOf="@id/pos"
+            android:layout_toRightOf="@id/pos"
+            android:text="00:00"
+            android:textColor="#ffffff" />
+
+        <ImageView
+            android:id="@+id/btn_screen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dip"
+            android:src="@drawable/icon_win_screen" />
+
+        <TextView
+            android:id="@+id/tv_rate"
+            android:layout_width="76dip"
+            android:layout_height="40dip"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:layout_toLeftOf="@id/btn_screen"
+            android:gravity="center"
+            android:text="超清"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/text_size18" />
+
+        <RadioButton
+            android:id="@+id/btn_danmaku"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dip"
+            android:layout_toLeftOf="@id/tv_rate"
+            android:background="@drawable/selector_radiobutton"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center" />
+
+        <ImageView
+            android:id="@+id/btn_danmaku_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="25dip"
+            android:layout_toLeftOf="@id/btn_danmaku"
+            android:background="@drawable/icon_send_danmaku" />
+
+
+    </RelativeLayout>
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        style="@style/MediaController_SeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="1000" />
+
+</RelativeLayout>

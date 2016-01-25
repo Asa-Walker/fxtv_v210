@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.fxtv.threebears.view.pullToRefreshSwipeMenuListView.PullToRefreshSwipeMenuListView
+        android:id="@+id/swiplv"
+        style="@style/style_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="0.5dp" />
+
+
+    <TextView
+        android:id="@+id/no_focus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/page_bg"
+        android:gravity="center"
+        android:text="暂无关注"
+        android:textColor="@color/main_color"
+        android:textSize="@dimen/text_size20"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/view_empty"
+        layout="@layout/xlistview_empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_actionbar_layout_now" />
+
+
+</RelativeLayout>

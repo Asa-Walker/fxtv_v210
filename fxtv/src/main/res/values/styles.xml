@@ -1,0 +1,197 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- viewpager indicator start  parent="Theme.PageIndicatorDefaults"  parent="Widget.TabPageIndicator"-->
+
+    <style name="AppBaseTheme" parent="android:Theme.Light.NoTitleBar"></style>
+
+    <style name="AppTheme.PageIndicatorSelf" parent="AppBaseTheme">
+        <item name="vpiTabPageIndicatorStyle">@style/Widget.TabPageIndicatorSelf</item>
+    </style>
+
+    <style name="Widget.TabPageIndicatorSelf">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/vpi_tab_indicator_self</item>
+        <item name="android:paddingLeft">8dip</item>
+        <item name="android:paddingRight">8dip</item>
+        <item name="android:textAppearance">@style/TextAppearance.TabPageIndicatorSelf</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:divider">@drawable/icon_tab_drawable</item>
+        <item name="android:showDividers">middle</item>
+        <item name="android:dividerPadding">10dip</item>
+    </style>
+
+    <style name="TextAppearance.TabPageIndicatorSelf" parent="Widget">
+        <item name="android:textColor">@color/selecter_tab_color_defaults</item>
+    </style>
+    <!-- viewpager indicator start -->
+
+
+    <!-- 首页Tab style -->
+    <style name="activity_main_tab">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/text_size12</item>
+        <item name="android:textColor">@drawable/selector_tab_text</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@color/color_transparency</item>
+    </style>
+
+    <!-- radio button style start -->
+    <style name="style_radiobutton">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <!-- <item name="android:background">@drawable/selector_radiobutton</item> -->
+        <item name="android:textColor">@drawable/selector_rb_textcolor1</item>
+        <item name="android:textSize">@dimen/text_size16</item>
+    </style>
+
+    <style name="style_radiobutton2">
+        <item name="android:layout_height">50dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/selector_rb_bg2</item>
+        <item name="android:textColor">@drawable/selector_rb_textcolor2</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <!-- radio button style end -->
+
+
+    <!-- 薛建浩  关于wifi开关 -->
+    <style name="wifi_switch">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/selector_wifi</item>
+    </style>
+
+    <!-- create by zhaoshanghong -->
+    <style name="style_lv">
+        <item name="android:divider">@null</item>
+        <item name="android:dividerHeight">0dip</item>
+        <item name="android:paddingLeft">0dip</item>
+        <item name="android:paddingRight">0dip</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:listSelector">@color/color_transparency</item>
+    </style>
+
+    <style name="style_lv_1">
+        <item name="android:divider">@color/color_line</item>
+        <item name="android:dividerHeight">1dip</item>
+        <item name="android:headerDividersEnabled">false</item>
+        <item name="android:paddingLeft">0dip</item>
+        <item name="android:paddingRight">0dip</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:listSelector">@color/color_transparency</item>
+    </style>
+
+    <style name="style_lv2">
+        <item name="android:divider">@null</item>
+        <item name="android:dividerHeight">5dip</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:listSelector">@color/color_transparency</item>
+    </style>
+
+    <style name="loading_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/color_transparency</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+
+    <!-- create by xuejianhao -->
+    <style name="personal_listview_style">
+        <item name="android:divider">#ffffffff</item>
+        <item name="android:dividerHeight">0.5dip</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:paddingRight">10dip</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:listSelector">@null</item>
+    </style>
+    <!-- 主播空间中間的style 于坤 -->
+    <style name="activity_anchor_space_tab_middle">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/selector_bg_anchor_tab</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="MediaController_SeekBar" parent="android:Widget.SeekBar">
+        <item name="android:progressDrawable">@drawable/scrubber_progress_horizontal_holo_dark
+        </item>
+        <item name="android:thumb">@drawable/thumb</item>
+        <item name="android:thumbOffset">0dip</item>
+    </style>
+    <!-- popuwidow 动画  薛建浩 -->
+    <style name="AnimationPopuwindow">
+
+        <!-- PopupWindow左右弹出的效果 -->
+        <item name="android:windowEnterAnimation">@anim/popuwindow_anime_out</item>
+        <item name="android:windowExitAnimation">@anim/popuwindow_anime_back</item>
+    </style>
+
+
+    <style name="SharePopuWindowAnimation">
+        <!-- PopupWindow上下弹出的效果 -->
+        <item name="android:windowEnterAnimation">@anim/popuwindow_anime_up</item>
+        <item name="android:windowExitAnimation">@anim/popuwindow_anime_down</item>
+    </style>
+
+    <style name="video_loading" parent="@android:style/Widget.ProgressBar.Large">
+        <item name="android:indeterminateDrawable">@drawable/video_loading</item>
+        <item name="android:minWidth">40dip</item>
+        <item name="android:maxWidth">40dip</item>
+        <item name="android:minHeight">40dip</item>
+        <item name="android:maxHeight">40dip</item>
+    </style>
+
+    <!-- 自定义dialog -->
+    <style name="my_dialog" parent="@android:style/Theme.Dialog">
+
+        <!-- windowFrame框为无 -->
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- 除去背景 -->
+        <item name="android:windowBackground">@color/color_transparency</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 去掉覆盖层 -->
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 设置背景颜色 -->
+        <item name="android:background">#00000000</item>
+    </style>
+
+    <style name="my_pop_dialog" parent="@android:style/Theme.Dialog">
+
+        <!-- windowFrame框为无 -->
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- 除去背景 -->
+        <item name="android:windowBackground">@color/color_transparency</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 去掉覆盖层 -->
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 设置背景颜色 -->
+        <item name="android:background">#00000000</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+</resources>

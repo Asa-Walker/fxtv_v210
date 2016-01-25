@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dip"
+    android:background="@color/main_color" >
+
+    <TextView
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        android:gravity="center"
+        android:text="搜索"
+        android:textColor="@color/text_color_white"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/ab_left_img"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/selector_btn"
+        android:clickable="true"
+        android:scaleType="center"
+        android:src="@drawable/icon_arrow_left1"
+        android:onClick="backClick"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toLeftOf="@id/search"
+        android:layout_toRightOf="@id/ab_left_img"
+        android:gravity="center_vertical"
+        android:background="@drawable/bg_search_edittext" >
+
+        <ImageView
+            android:id="@+id/search_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="8dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:src="@drawable/icon_seach2" />
+
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/cancel_text_imageview"
+            android:layout_toRightOf="@id/search_imageview"
+            android:background="@null"
+            android:gravity="center_vertical|left"
+            android:hint="输入搜索内容"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:textSize="13sp"
+            android:textColorHint="#d9d9d9" />
+
+        <ImageView
+            android:id="@+id/cancel_text_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/cancel_text"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

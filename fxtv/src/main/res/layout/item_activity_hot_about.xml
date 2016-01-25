@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/touming_mian_color"
+        android:scaleType="fitXY" />
+
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:src="@drawable/icon_arrow_left1" />
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/back"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/back"
+        android:text="说说你第一个玩的英雄"
+        android:textColor="@color/text_color_white"
+        android:textSize="@dimen/text_size20"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/title"
+        android:layout_below="@id/title"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:paddingBottom="10dp"
+        android:text="到家了卡上打死了肯德基可啦思刻来得及克拉斯多久是大家开始贷记卡教科书的健康就卡死贷记卡数据库的大家可垃圾打卡上考虑到了卡斯柯来得及可啦思刻老的快拉丝机多久啊三六九等"
+        android:textColor="@color/text_color_white"
+        android:textSize="@dimen/text_size18" />
+
+
+</RelativeLayout>

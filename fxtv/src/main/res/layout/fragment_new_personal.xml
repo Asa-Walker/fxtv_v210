@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/fragment_personal_user_rela"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp">
+
+            <com.fxtv.framework.widget.circular.CircularImage
+                android:id="@+id/fragment_personal_user_pic"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="5dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/fragment_personal_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:text="请登录"
+                android:textColor="@color/main_color"
+                android:textSize="@dimen/text_size18" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/icon_arrow_right1" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/color_line" />
+
+        <GridView
+            android:id="@+id/user_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:listSelector="@color/color_transparency"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:verticalSpacing="1dip" />
+
+        <com.fxtv.framework.widget.MyGridView
+            android:id="@+id/personal_gridView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:horizontalSpacing="0.5dip"
+            android:listSelector="@color/color_transparency"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:verticalSpacing="0.5dip" />
+
+        <Button
+            android:id="@+id/personal_btn_qiandao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/selector_btn2"
+            android:padding="10dp"
+            android:text="签到"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/text_size18" />
+    </LinearLayout>
+
+</ScrollView>

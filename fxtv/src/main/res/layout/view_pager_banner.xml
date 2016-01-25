@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/banner_view_pager"/>
+
+    <!-- radius 圆点半径 -->
+    <!-- centered 居中 -->
+    <!-- pageColor 圆点默认背景 -->
+    <!-- fillColor 选中圆点背景 -->
+    <com.fxtv.framework.widget.pagerindicator.CirclePageIndicator
+        android:id="@+id/banner_indicator"
+        app:fillColor="@color/main_color"
+        app:pageColor="@color/color_white"
+        app:radius="3dp"
+        app:centered="true"
+        app:strokeWidth="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        />
+
+</RelativeLayout>

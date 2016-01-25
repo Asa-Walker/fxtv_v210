@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/pop_option"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:paddingBottom="8dp">
+
+
+    <TextView
+        android:id="@+id/option_zan"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="@string/zan"
+        android:textColor="@color/pop_color"
+        android:textSize="15dp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="1dip"
+        android:background="@color/pop_color" />
+
+    <TextView
+        android:id="@+id/copy"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="复制"
+        android:textColor="@color/pop_color"
+        android:textSize="15dp" />
+
+</LinearLayout>

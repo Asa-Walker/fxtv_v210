@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+     >
+
+    <TextView
+        android:id="@+id/pop_rate_1"
+        android:layout_width="76dip"
+        android:layout_height="40dip"
+        android:gravity="center"
+        android:text="超清"
+        android:textColor="@color/text_color_white"
+        android:textSize="@dimen/text_size18"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/pop_rate_2"
+        android:layout_width="76dip"
+        android:layout_height="40dip"
+        android:gravity="center"
+        android:text="高清"
+        android:textColor="@color/text_color_white"
+        android:textSize="@dimen/text_size18"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/pop_rate_3"
+        android:layout_width="76dip"
+        android:layout_height="40dip"
+        android:gravity="center"
+        android:text="标准"
+        android:textColor="@color/text_color_white"
+        android:textSize="@dimen/text_size18"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/pop_rate_4"
+        android:layout_width="76dip"
+        android:layout_height="40dip"
+        android:gravity="center"
+        android:text="流畅"
+        android:textColor="@color/text_color_white"
+        android:textSize="@dimen/text_size18"
+        android:visibility="gone" />
+
+</LinearLayout>

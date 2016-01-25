@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg" >
+
+    <TextView
+        android:id="@+id/text_recommend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_bg_frame_bottom"
+        android:gravity="left"
+        android:padding="10dp"
+        android:text="推荐"
+        android:textColor="@color/text_color_default"
+        android:textSize="@dimen/text_size16" />
+
+    <ImageView
+        android:id="@+id/cancel_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/text_recommend"
+        android:layout_marginRight="20dp"
+        android:padding="10dp"
+        android:src="@drawable/cancel_text" />
+
+    <GridView
+        android:id="@+id/fragment_anchor_space_recommend"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/text_recommend"
+        android:listSelector="@color/color_transparency"
+        android:numColumns="4"
+        android:scrollbars="none" />
+
+</RelativeLayout>

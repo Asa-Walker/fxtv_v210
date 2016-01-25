@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_actionbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/activity_suggestion_actv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="150dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/suggestion_shape1"
+            android:gravity="top"
+            android:hint="@string/activity_suggestion_cotent_hint"
+            android:imeOptions="actionNext"
+            android:maxLength="300"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textSize="@dimen/text_size16" />
+
+        <TextView
+            android:id="@+id/activity_suggestion_length_limit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="2dp"
+            android:gravity="right"
+            android:text="2/200"
+            android:textColor="@color/text_color_default"
+            android:textSize="@dimen/text_size14"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/activity_suggestion_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:hint="@string/activity_suggestion_ourqq_hint"
+            android:textSize="@dimen/text_size16"/>
+
+        <EditText
+            android:id="@+id/activity_suggetion_connact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/suggestion_shape1"
+            android:gravity="center_vertical"
+            android:hint="@string/activity_suggestion_connact_hint"
+            android:imeOptions="actionDone"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textSize="@dimen/text_size16" />
+
+        <Button
+            android:id="@+id/submit_suggetion"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/selector_btn2"
+            android:text="@string/activity_suggestion_btn_submit_text"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/text_size18"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg"
+    android:orientation="vertical"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/fragment_anchor_message_relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/fragment_anchor_message_latest_act"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/shape_bg_frame_bottom"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="主播动态"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_size16" />
+
+            <ImageView
+                android:id="@+id/fragment_anchor_message_right_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/fragment_anchor_message_latest_act"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/icon_arrow_right1" />
+
+            <TextView
+                android:id="@+id/fragment_anchor_message_new_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/fragment_anchor_message_right_icon"
+                android:gravity="center"
+                android:text="15条新动态"
+                android:textColor="@color/text_color4"
+                android:textSize="@dimen/text_size14" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/fragment_anchor_message_shop"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_bg_frame_bottom"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="Taの店铺"
+            android:textColor="@color/text_color_default"
+            android:textSize="@dimen/text_size16" />
+
+        <LinearLayout
+            android:id="@+id/fragment_message_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/text_color_white"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/fragment_anchor_message_anchor_recommend"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_bg_frame_bottom"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="主播推荐"
+            android:textColor="@color/text_color_default"
+            android:textSize="@dimen/text_size16" />
+
+        <com.fxtv.framework.widget.MyGridView
+            android:id="@+id/fragment_anchor_message_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/text_color_white"
+            android:listSelector="@color/color_transparency"
+            android:numColumns="4"
+            android:scrollbars="none" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="@color/text_color_white" />
+    </LinearLayout>
+
+</ScrollView>

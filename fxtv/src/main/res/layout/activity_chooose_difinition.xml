@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/view_actionbar" />
+
+    <TextView
+        android:id="@+id/auto_choose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_bg_frame_bottom"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="自动"
+        android:textColor="@color/text_color_default"
+        android:textSize="@dimen/text_size16" />
+
+    <TextView
+        android:id="@+id/super_digital"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_bg_frame_bottom"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="超清"
+        android:textColor="@color/text_color_default"
+        android:textSize="@dimen/text_size16" />
+
+    <TextView
+        android:id="@+id/high_digital"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_bg_frame_bottom"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="高清"
+        android:textColor="@color/text_color_default"
+        android:textSize="@dimen/text_size16" />
+
+    <TextView
+        android:id="@+id/normal_digital"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_bg_frame_bottom"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="标清"
+        android:textColor="@color/text_color_default"
+        android:textSize="@dimen/text_size16" />
+
+    <TextView
+        android:id="@+id/low_digital"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_bg_frame_bottom"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="流畅"
+        android:textColor="@color/text_color_default"
+        android:textSize="@dimen/text_size16" />
+
+</LinearLayout>

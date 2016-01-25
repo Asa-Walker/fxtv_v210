@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/video_gesture_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- logo遮罩 -->
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/logo" />
+
+    <!-- title layout -->
+
+    <RelativeLayout
+        android:id="@+id/video_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <!-- bottom layout -->
+
+    <RelativeLayout
+        android:id="@+id/video_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <RelativeLayout
+        android:id="@+id/video_danmaku_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- history layout -->
+
+    <RelativeLayout
+        android:id="@+id/video_history_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/video_title_layout" />
+
+    <ImageView
+        android:id="@+id/player_lock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dip"
+        android:src="@drawable/icon_unlock"
+        android:visibility="gone"
+        />
+
+    <RelativeLayout
+        android:id="@+id/video_tips_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/video_proportion_choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/touming_black_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/moren"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="默认"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/text_size22"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/full_screen_choose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="全屏"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/text_size22"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/long_choose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="16:9"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/text_size22"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/width_choose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="4:3"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/text_size22"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>

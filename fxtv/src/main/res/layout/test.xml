@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+ <LinearLayout
+                    android:id="@+id/lottery_prize"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/linear"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="10dp"
+                    android:visibility="gone" >
+
+                    <RelativeLayout
+                        android:id="@+id/a_level_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2" >
+
+                        <TextView
+                            android:id="@+id/zero"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:text="0"
+                            android:textColor="@color/color_orange"
+                            android:textSize="@dimen/text_size16" />
+
+                        <TextView
+                            android:id="@+id/video_play_a_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:text="(1000)"
+                            android:textColor="@color/text_color_default"
+                            android:textSize="@dimen/text_size12" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/a_level"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="A"
+                        android:textColor="@color/color_orange"
+                        android:textSize="@dimen/text_size16" />
+
+                    <RelativeLayout
+                        android:id="@+id/b_level_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:paddingLeft="10dp" >
+
+                        <TextView
+                            android:id="@+id/b_level"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:text="B"
+                            android:textColor="@color/color_orange"
+                            android:textSize="@dimen/text_size16" />
+
+                        <TextView
+                            android:id="@+id/video_play_b_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@id/b_level"
+                            android:text="(2000)"
+                            android:textColor="@color/text_color_default"
+                            android:textSize="@dimen/text_size12" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/c_level_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2" >
+
+                        <TextView
+                            android:id="@+id/c_level"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:text="C"
+                            android:textColor="@color/color_orange"
+                            android:textSize="@dimen/text_size16" />
+
+                        <TextView
+                            android:id="@+id/video_play_c_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@id/c_level"
+                            android:text="(3000)"
+                            android:textColor="@color/text_color_default"
+                            android:textSize="@dimen/text_size12" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+</RelativeLayout>

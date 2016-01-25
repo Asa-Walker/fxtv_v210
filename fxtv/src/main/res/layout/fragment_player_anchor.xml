@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.fxtv.framework.widget.circular.CircularImage
+        android:id="@+id/video_play_page_details_photo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY" />
+
+    <Button
+        android:id="@+id/video_play_page_details_btn_book"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shape_rectangle_circular_main"
+        android:gravity="center"
+        android:textColor="@color/text_color_white"
+        android:textSize="@dimen/text_size16"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/video_play_page_details_btn_book"
+        android:layout_toRightOf="@id/video_play_page_details_photo"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/video_play_page_details_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="14dp"
+            android:textColor="@color/main_color"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/video_play_page_details_book_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:paddingTop="5dp"
+            android:text="订阅数：12.0万"
+            android:textColor="#616161"/>
+    </LinearLayout>
+
+</RelativeLayout>

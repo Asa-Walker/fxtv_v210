@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/downlaod_favorites_history_actionbar" />
+
+    <LinearLayout
+        android:id="@+id/activity_hot_vote_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_bg_frame_bottom"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/activity_hot_vote_voting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="进行中"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/text_size18" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/color_line" />
+
+        <TextView
+            android:id="@+id/activity_hot_vote_voted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="已结束"
+            android:textColor="@color/text_color_default"
+            android:textSize="@dimen/text_size18" />
+    </LinearLayout>
+
+    <com.fxtv.framework.widget.xlistview.XListView
+        android:id="@+id/activity_hot_vote_listview"
+        style="@style/style_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" />
+
+</LinearLayout>

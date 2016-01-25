@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:gravity="center_horizontal">
+
+    <com.fxtv.framework.widget.xlistview.XListView
+        android:id="@+id/listview"
+        style="@style/style_lv_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@color/color_transparency"
+        android:dividerHeight="0dp"
+        android:fadingEdge="none" />
+
+    <LinearLayout
+        android:id="@+id/line_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_95_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_attention"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="加关注"
+            android:background="@drawable/selector_bt_20"
+            android:textColor="@color/text_color_default"
+            android:textSize="@dimen/text_size16" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/vertical" />
+
+        <TextView
+            android:id="@+id/tv_complaints"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="发吐槽"
+            android:background="@drawable/selector_bt_20"
+            android:textColor="@color/text_color_default"
+            android:textSize="@dimen/text_size16" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/vertical" />
+
+        <TextView
+            android:id="@+id/tv_question"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_bt_20"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="相关话题"
+            android:textColor="@color/text_color_default"
+            android:textSize="@dimen/text_size16" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@id/line_bottom"
+        android:background="@color/color_line" />
+
+    <include
+        android:id="@+id/line_title"
+        layout="@layout/view_actionbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout_about_topic"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:background="@color/color_line"
+        />
+</RelativeLayout>

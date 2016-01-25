@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_bg_frame_bottom"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="(小智逼格双飞记)，久违妖狐的逆天误杀"
+            android:textColor="@color/text_color_default"
+            android:textSize="@dimen/text_size16" />
+
+        <TextView
+            android:id="@+id/present"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginTop="10dp"
+            android:text="奖品 :"
+            android:textColor="@color/text_color_default"
+            android:textSize="@dimen/text_size14" />
+
+        <TextView
+            android:id="@+id/present_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/present"
+            android:text="100Q币"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/text_size14" />
+
+        <TextView
+            android:id="@+id/present_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/present"
+            android:layout_marginTop="10dp"
+            android:text="两天后开奖"
+            android:textColor="@color/text_color_default"
+            android:textSize="@dimen/text_size14" />
+
+        <TextView
+            android:id="@+id/get_present"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/present"
+            android:layout_marginTop="10dp"
+            android:text="恭喜中奖"
+            android:textColor="@color/color_red"
+            android:textSize="@dimen/text_size14" />
+    </RelativeLayout>
+
+</LinearLayout>

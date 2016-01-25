@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/view_actionbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/shape_bg_frame_bottom" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="使用2G/3G/4G网络"
+                    android:textColor="@color/text_color_default"
+                    android:textSize="@dimen/text_size16" />
+
+                <RadioGroup
+                    android:id="@+id/activity_my_setup_radiogroup_2G"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/wifi_shape_on"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/activity_my_setup_2G_off"
+                        style="@style/wifi_switch"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginTop="1dp" />
+
+                    <RadioButton
+                        android:id="@+id/activity_my_setup_2G_on"
+                        style="@style/wifi_switch"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="1dp" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/shape_bg_frame_bottom" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="允许非wifi网络缓存"
+                    android:textColor="@color/text_color_default"
+                    android:textSize="@dimen/text_size16" />
+
+                <RadioGroup
+                    android:id="@+id/activity_my_setup_radiogroup_wifi"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/wifi_shape_on"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/activity_my_setup_wifi_off"
+                        style="@style/wifi_switch"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginTop="1dp" />
+
+                    <RadioButton
+                        android:id="@+id/activity_my_setup_wifi_on"
+                        style="@style/wifi_switch"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="1dp" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/shape_bg_frame_bottom" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="接收消息推送"
+                    android:textColor="@color/text_color_default"
+                    android:textSize="@dimen/text_size16" />
+
+                <RadioGroup
+                    android:id="@+id/activity_my_setup_radiogroup_receive_message"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/wifi_shape_on"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/activity_my_setup_receive_message_off"
+                        style="@style/wifi_switch"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginTop="1dp" />
+
+                    <RadioButton
+                        android:id="@+id/activity_my_setup_receive_message_on"
+                        style="@style/wifi_switch"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="1dp" />
+                </RadioGroup>
+            </RelativeLayout>
+
+
+             <TextView
+                android:id="@+id/activity_my_setup_save_path"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_bg_frame_bottom"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/icon_arrow_right1"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="视频缓存路径"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_size16" />
+            
+            
+
+            <RelativeLayout
+                android:id="@+id/activity_my_setup_clear_cache"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_bg_frame_bottom" >
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="清除图片缓存"
+                    android:textColor="@color/text_color_default"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:id="@+id/activity_my_setup_cache"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical|right"
+                    android:paddingRight="15dp"
+                    android:text="计算中"
+                    android:textColor="@color/main_color"
+                    android:textSize="@dimen/text_size16" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/activity_my_setup_suggestion"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/text_color_white"
+                android:drawableRight="@drawable/icon_arrow_right1"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="用户反馈"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_size16" />
+
+            <TextView
+                android:id="@+id/activity_my_setup_check_update"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/text_color_white"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/icon_arrow_right1"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="检查更新"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_size16" />
+
+            <TextView
+                android:id="@+id/activity_my_setup_user_argeement"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/text_color_white"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/icon_arrow_right1"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="用户协议"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_size16" />
+
+            <TextView
+                android:id="@+id/activity_my_setup_about_us"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/shape_bg_frame_bottom"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/icon_arrow_right1"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="关于我们"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_size16" />
+
+            <TextView
+                android:id="@+id/activity_setup_logout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_bg_frame_bottom"
+                android:gravity="center"
+                android:text="退出当前帐号"
+                android:textColor="@color/color_red"
+                android:textSize="@dimen/text_size16" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

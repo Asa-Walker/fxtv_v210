@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/view_actionbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/activity_personal_user_rela"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_bg_frame_bottom"
+                android:padding="10dip" >
+
+                <com.fxtv.framework.widget.circular.CircularImage
+                    android:id="@+id/activity_personal_user_pic"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/activity_personal_user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20dip"
+                    android:layout_toRightOf="@id/activity_personal_user_pic"
+                    android:drawableRight="@drawable/icon_arrow_right1"
+                    android:singleLine="true"
+                    android:textColor="@color/main_color"
+                    android:textSize="@dimen/text_size18" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_bg_frame_bottom"
+                android:orientation="horizontal"
+                android:padding="5dip" >
+
+                <LinearLayout
+                    android:id="@+id/activity_personal_my_level_lay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/activity_personal_my_level"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="LV1"
+                        android:textColor="@color/text_color_default"
+                        android:textSize="@dimen/text_size16" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="我的等级"
+                        android:textColor="@color/text_color_gray"
+                        android:textSize="@dimen/text_size16" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/color_line" />
+
+                <LinearLayout
+                    android:id="@+id/activity_personal_my_biscuit_lay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/activity_personal_my_biscuit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="0"
+                        android:textColor="@color/text_color_default"
+                        android:textSize="@dimen/text_size16" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="我的饼干"
+                        android:textColor="@color/text_color_gray"
+                        android:textSize="@dimen/text_size16" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/color_line" />
+
+                <LinearLayout
+                    android:id="@+id/activity_personal_my_wolf_skin_lay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/activity_personal_my_wolf_skin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="0"
+                        android:textColor="@color/text_color_default"
+                        android:textSize="@dimen/text_size16" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="我的熊掌"
+                        android:textColor="@color/text_color_gray"
+                        android:textSize="@dimen/text_size16" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dip"
+                android:background="@color/color_line" />
+
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/shape_bg_frame_bottom"
+                android:drawableLeft="@drawable/my_message_icon"
+                android:drawablePadding="5dip"
+                android:drawableRight="@drawable/icon_arrow_right1"
+                android:gravity="center_vertical"
+                android:padding="15dip"
+                android:text="我的消息"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_size16" />
+            
+              <TextView
+                android:id="@+id/present"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_bg_frame_bottom"
+                android:drawableLeft="@drawable/present_icon"
+                android:drawablePadding="5dip"
+                android:drawableRight="@drawable/icon_arrow_right1"
+                android:padding="15dip"
+                android:text="我的抽奖"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_size16" />
+
+            <TextView
+                android:id="@+id/subscribe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/shape_bg_frame_bottom"
+                android:drawableLeft="@drawable/my_subscribe_icon"
+                android:drawablePadding="5dip"
+                android:drawableRight="@drawable/icon_arrow_right1"
+                android:padding="15dip"
+                android:text="我的订阅"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_size16" />
+
+            <TextView
+                android:id="@+id/anchor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_bg_frame_bottom"
+                android:drawableLeft="@drawable/my_anchor_icona"
+                android:drawablePadding="5dip"
+                android:drawableRight="@drawable/icon_arrow_right1"
+                android:padding="15dip"
+                android:text="我的守护"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_size16" />
+
+            <TextView
+                android:id="@+id/favorites"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/shape_bg_frame_bottom"
+                android:drawableLeft="@drawable/my_favorites_icon"
+                android:drawablePadding="5dip"
+                android:drawableRight="@drawable/icon_arrow_right1"
+                android:padding="15dip"
+                android:text="收藏管理"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_size16" />
+
+            <TextView
+                android:id="@+id/down"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_bg_frame_bottom"
+                android:drawableLeft="@drawable/my_cache_icon"
+                android:drawablePadding="5dip"
+                android:drawableRight="@drawable/icon_arrow_right1"
+                android:padding="15dip"
+                android:text="缓存管理"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_size16" />
+
+            <TextView
+                android:id="@+id/history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_bg_frame_bottom"
+                android:drawableLeft="@drawable/my_history_icon"
+                android:drawablePadding="5dip"
+                android:drawableRight="@drawable/icon_arrow_right1"
+                android:padding="15dip"
+                android:text="历史记录"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_size16" />
+
+            <TextView
+                android:id="@+id/settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/shape_bg_frame_bottom"
+                android:drawableLeft="@drawable/my_setup_icon"
+                android:drawablePadding="5dip"
+                android:drawableRight="@drawable/icon_arrow_right1"
+                android:padding="15dip"
+                android:text="设置"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_size16" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

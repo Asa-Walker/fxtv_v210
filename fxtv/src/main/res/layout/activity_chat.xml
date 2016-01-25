@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/actionbar"
+        layout="@layout/view_actionbar" />
+
+    <RelativeLayout
+        android:id="@+id/edit_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp"
+        android:visibility="visible" >
+
+        <Button
+            android:id="@+id/message_content_button"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/selector_btn2"
+            android:gravity="center"
+            android:text="@string/activity_suggestion_btn_submit_text"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/message_content_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_toLeftOf="@id/message_content_button"
+            android:background="@drawable/bg_editext_comment"
+            android:padding="2dip" />
+    </RelativeLayout>
+
+    <com.fxtv.framework.widget.xlistview.XListView
+        android:id="@+id/activity_messagecontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/edit_layout"
+        android:layout_below="@id/actionbar"
+        android:listSelector="@color/color_transparency"
+        android:divider="@null" />
+
+</RelativeLayout>

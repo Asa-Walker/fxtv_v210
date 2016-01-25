@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_bg_frame_bottom"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="签到"
+        android:textColor="@color/text_color_default_dark"
+        android:textSize="@dimen/text_size16" />
+
+    <TextView
+        android:id="@+id/publish_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/title"
+        android:padding="5dp"
+        android:text="刚刚"
+        android:textColor="@color/text_color_default"
+        android:textSize="@dimen/text_size14" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:text="+100"
+        android:textColor="@color/text_color_default_dark"
+        android:textSize="@dimen/text_size14" />
+
+</RelativeLayout>

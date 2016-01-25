@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_color_white" >
+
+    <include
+        android:id="@+id/action_bar"
+        layout="@layout/view_actionbar" />
+
+    <TextView
+        android:id="@+id/activity_vote_detail_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/action_bar"
+        android:padding="10dp"
+        android:textColor="@color/text_color_default"
+        android:textSize="@dimen/text_size16" />
+
+    <TextView
+        android:id="@+id/activity_vote_detail_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_vote_detail_title"
+        android:paddingLeft="10dp"
+        android:textColor="@color/text_color_gray"
+        android:textSize="@dimen/text_size14" />
+
+    <GridView
+        android:id="@+id/choose_grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/activity_vote_detail_num"
+        android:horizontalSpacing="5dip"
+        android:listSelector="@null"
+        android:numColumns="3"
+        android:paddingBottom="60dp"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/selector_btn2"
+        android:gravity="center"
+        android:text="投票"
+        android:textColor="@color/text_color_white"
+        android:textSize="@dimen/text_size18"
+        android:visibility="gone" />
+
+</RelativeLayout>

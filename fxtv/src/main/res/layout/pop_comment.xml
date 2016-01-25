@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <RelativeLayout
+            android:id="@+id/bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/text_color_white"
+            android:padding="1dp"
+            android:visibility="visible" >
+
+            <Button
+                android:id="@+id/comment_btn_send"
+                android:layout_width="80dp"
+                android:layout_height="40dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:background="@drawable/shape_rectangle_circular_main"
+                android:text="发送"
+                android:textColor="@color/text_color_white"
+                android:textSize="@dimen/text_size16"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/fragment_play_page_comment_et_msg"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@id/comment_btn_send"
+                android:background="@drawable/bg_editext_comment"
+                android:gravity="center_vertical"
+                android:hint="说点什么吧"
+                android:paddingLeft="2dp"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_size14" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

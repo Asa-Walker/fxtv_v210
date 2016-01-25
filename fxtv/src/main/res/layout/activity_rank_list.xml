@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_color_white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/action_bar"
+        layout="@layout/downlaod_favorites_history_actionbar" />
+
+    <RadioGroup
+        android:id="@+id/activity_rank_list_rg"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/action_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_play_page_radiogroup"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/anchor_rank_list"
+            android:layout_width="125dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/radiobutton_anchor"
+            android:button="@null"
+            android:gravity="center"
+            android:text="主播排行"
+            android:textColor="@drawable/ramk_list_text_color" />
+
+        <RadioButton
+            android:id="@+id/video_rank_list"
+            android:layout_width="125dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/radiobutton_video"
+            android:button="@null"
+            android:gravity="center"
+            android:text="视频排行"
+            android:textColor="@drawable/ramk_list_text_color" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/rank_list_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_rank_list_rg"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/action_bar"
+        android:background="@drawable/shape_black_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="日排行"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/text_size16" />
+
+        <TextView
+            android:id="@+id/month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"
+            android:text="月排行"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/text_size16" />
+    </LinearLayout>
+
+</RelativeLayout>

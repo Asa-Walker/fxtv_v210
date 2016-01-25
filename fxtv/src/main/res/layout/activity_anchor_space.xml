@@ -1,0 +1,224 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/page_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/anchor_top"
+            android:layout_width="match_parent"
+            android:layout_height="180dip" >
+
+            <ImageView
+                android:id="@+id/anchor_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/icon_space_bg" />
+
+            <com.fxtv.threebears.view.RoundImageView
+                android:id="@+id/anchor_photo"
+                android:layout_width="70dip"
+                android:layout_height="70dip"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dip"
+                android:src="@drawable/default_img" />
+
+            <TextView
+                android:id="@+id/anchor_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/anchor_photo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dip"
+                android:text="主播的名字"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_size16" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/anchor_photo"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@id/anchor_name"
+                android:src="@drawable/icon_auth"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/top_btn_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/anchor_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dip"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/anchor_btn_guard"
+                    android:layout_width="70dip"
+                    android:layout_height="25dip"
+                    android:background="@drawable/shape_rectangle_circular_main"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/anchor_btn1"
+                    android:textColor="@color/text_color_white"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:id="@+id/anchor_num_guard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/text_size16" />
+
+                <Button
+                    android:id="@+id/anchor_btn_order"
+                    android:layout_width="70dip"
+                    android:layout_height="25dip"
+                    android:layout_marginLeft="10dip"
+                    android:background="@drawable/shape_rectangle_circular_main"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/anchor_btn2"
+                    android:textColor="@color/text_color_white"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:id="@+id/anchor_num_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/text_size18" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/anchor_describe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/top_btn_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="2dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginTop="2dip"
+                android:text="主播的介绍主播的介绍主播的介绍"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_size14" />
+
+            <ImageView
+                android:id="@+id/anchor_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/icon_arrow_left1" />
+
+            <ImageView
+                android:id="@+id/anchor_morefunction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:paddingBottom="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="20dp"
+                android:src="@drawable/anchor_more" />
+        </RelativeLayout>
+
+        <RadioGroup
+            android:id="@+id/anchor_rg"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:background="@drawable/shape_bg_frame_bottom"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/anchor_rb_video"
+                style="@style/style_radiobutton"
+                android:text="视频" />
+
+            <View
+                android:layout_width="1dip"
+                android:layout_height="20dip"
+                android:layout_gravity="center_vertical"
+                android:background="@color/color_line" />
+
+            <RadioButton
+                android:id="@+id/anchor_rb_msg"
+                style="@style/style_radiobutton"
+                android:text="信息" />
+
+            <View
+                android:layout_width="1dip"
+                android:layout_height="20dip"
+                android:background="@color/color_line" />
+
+            <RadioButton
+                android:id="@+id/anchor_rb_interaction"
+                style="@style/style_radiobutton"
+                android:text="互动" />
+        </RadioGroup>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/anchor_vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/anchor_layout_morefuction"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#55000000"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/anchor_layout_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
+            android:background="@color/color_white"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="@string/anchor_tab14"
+            android:textColor="@color/text_color_default"
+            android:textSize="@dimen/text_size18" />
+
+        <TextView
+            android:id="@+id/anchor_layout_shouhu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/anchor_layout_cancel"
+            android:layout_marginTop="0.5dp"
+            android:background="@color/color_white"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="@string/anchor_tab17"
+            android:textColor="@color/text_color_default"
+            android:textSize="@dimen/text_size18" />
+
+        <TextView
+            android:id="@+id/anchor_layout_dingyue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/anchor_layout_shouhu"
+            android:background="@color/color_white"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="@string/anchor_tab18"
+            android:textColor="@color/text_color_default"
+            android:textSize="@dimen/text_size18" />
+    </RelativeLayout>
+
+</RelativeLayout>

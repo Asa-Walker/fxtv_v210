@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_color_white">
+
+    <ImageView
+        android:id="@+id/choose_image"
+        android:layout_width="90dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/choosed"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignRight="@id/choose_image"
+        android:layout_alignTop="@id/choose_image"
+        android:src="@drawable/vote_choosed"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/choose_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:text="12%"
+        android:textColor="@color/text_color_default"
+        android:textSize="@dimen/text_size16"
+        android:visibility="gone" />
+
+</RelativeLayout>

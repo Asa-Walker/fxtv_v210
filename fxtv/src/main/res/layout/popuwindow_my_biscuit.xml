@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_my_color"
+    android:orientation="vertical"
+    android:paddingTop="25dp" >
+
+    <include layout="@layout/view_actionbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="什么是饼干"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_size14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="饼干是飞熊视频内的积分"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_size12" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/color_line" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="怎么获得饼干"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_size14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:text="1.每日任务"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_size14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="2dp"
+                android:text="在应用上完成每日任务获得相应饼干奖励"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_size12" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/biscuit_shape"
+                android:drawablePadding="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="分享一次视频可以获得20个饼干,每天最多可以获得5次"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_size12" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/biscuit_shape"
+                android:drawablePadding="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="参与一次投票活动可以获得20个饼干，每天最多可以获得2次"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_size12" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/biscuit_shape"
+                android:drawablePadding="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="给视频留言评论每次可以获得5个饼干,每天最多可以获得5次"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_size12" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/biscuit_shape"
+                android:drawablePadding="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="给视频留言点赞每次可以获得5个饼干,每天最多可以获得5次"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_size12" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/biscuit_shape"
+                android:drawablePadding="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="给视频点赞每次可以获得5个饼干,每天最多可以获得5次"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_size12" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="订阅主播或专辑也可以获得饼干哟"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_size12" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingTop="5dp"
+                android:text="2.特别奖励"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_size14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="2dp"
+                android:text="在应用内提交意见建议或BUG反馈,采纳后将获得一定数量的饼干"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_size12" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingTop="5dp"
+                android:text="3.其他说明"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_size14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="2dp"
+                android:text="退订、取消赞、评论被删除，已经获得的饼干不会被扣除"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_size12" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/color_line" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="饼干可以用来干什么"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_size14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/biscuit_shape"
+                android:drawablePadding="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="饼干可以开启更多的守护位,为了你心爱的主播快点行动吧。"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_size12" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/biscuit_shape"
+                android:drawablePadding="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="积攒饼干将可以兑换神秘礼物"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_size12" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

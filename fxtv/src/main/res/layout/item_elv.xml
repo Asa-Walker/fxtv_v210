@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#ececec"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_bt_white"
+        android:descendantFocusability="blocksDescendants"
+        android:padding="10dip" >
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="我是传奇"
+            android:layout_margin="10dp"
+            android:textColor="@color/text_color_default" />
+
+        <Button
+            android:id="@+id/book"
+            android:layout_width="60dip"
+            android:layout_height="30dip"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/selector_bt_white"
+            android:focusable="false"
+            android:text="@string/cancelbook"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/text_size16" />
+    </RelativeLayout>
+
+</RelativeLayout>

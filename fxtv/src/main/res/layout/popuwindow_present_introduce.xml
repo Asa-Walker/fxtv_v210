@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_color_white"
+    android:orientation="vertical"
+    android:paddingTop="25dp" >
+
+    <include layout="@layout/view_actionbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="怎样获得抽奖机会?"
+                android:textColor="@color/text_color_default_dark"
+                android:textSize="@dimen/text_size16" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_bg_frame_bottom"
+                android:paddingBottom="30dp"
+                android:text="@string/present_one"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_size14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="30dp"
+                android:text="多个评论能否增加抽奖概率?"
+                android:textColor="@color/text_color_default_dark"
+                android:textSize="@dimen/text_size16" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="30dp"
+                android:text="@string/present_two"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_size14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="怎样知道自己中奖"
+                android:textColor="@color/text_color_default_dark"
+                android:textSize="@dimen/text_size16" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="30dp"
+                android:text="@string/present_three"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_size14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="虚拟物品和实物商品怎样领奖?"
+                android:textColor="@color/text_color_default_dark"
+                android:textSize="@dimen/text_size16" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_bg_frame_bottom"
+                android:paddingBottom="30dp"
+                android:text="@string/present_four"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_size14" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="30dp"
+                android:text="@string/present_five"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_size14" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

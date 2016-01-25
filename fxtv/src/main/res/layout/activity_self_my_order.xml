@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/activity_self_actonbar"
+        layout="@layout/view_actionbar" />
+
+    <ExpandableListView
+        
+        android:id="@+id/fragment_tab_self_mybook_elv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:childDivider="@color/color_line"
+        android:divider="@color/color_line"
+        android:listSelector="@color/color_transparency"
+        android:dividerHeight="0.5dp"
+        android:cacheColorHint="@color/color_transparency"
+        android:scrollbars="none" />
+
+</LinearLayout>

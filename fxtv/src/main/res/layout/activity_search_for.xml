@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg" >
+
+    <include
+        android:id="@+id/actionbar"
+        layout="@layout/search_actionbar" />
+
+    <com.fxtv.framework.widget.xlistview.XListView
+        android:id="@+id/activity_searchfor_listview"
+        style="@style/style_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/actionbar" />
+
+    <RelativeLayout
+        android:id="@+id/activity_searchfor_recommend_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/actionbar"
+        android:background="@color/text_color_white" >
+
+        <TextView
+            android:id="@+id/search_tishi"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:text="热门搜索词"
+            android:textColor="#d9d9d9"
+            android:textSize="12sp" />
+
+        <View
+            android:id="@+id/search_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/search_tishi"
+            android:background="@color/color_line" />
+
+        <com.fxtv.framework.widget.MyGridView
+            android:id="@+id/search_hotword_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/search_line"
+            android:layout_marginTop="20dp"
+            android:listSelector="#00000000"
+            android:numColumns="3"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="30dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

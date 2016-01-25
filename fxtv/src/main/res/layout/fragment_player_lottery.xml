@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/lottery_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_bg_frame_bottom"
+        android:padding="10dp"
+        android:text="视频抽奖"
+        android:textColor="@color/text_color_default"
+        android:textSize="@dimen/text_size16" />
+
+    <RelativeLayout
+        android:id="@+id/lottery_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/shape_bg_frame_bottom">
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <ProgressBar
+                android:id="@+id/video_play_one_progress_bar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="4dp"
+                android:layout_weight="2"
+                android:max="100"
+                android:progress="100"
+                android:progressDrawable="@drawable/player_lottery_progressbar" />
+
+            <ProgressBar
+                android:id="@+id/video_play_two_progress_bar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="4dp"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="2"
+                android:max="100"
+                android:progress="20"
+                android:progressDrawable="@drawable/player_lottery_progressbar" />
+
+            <ProgressBar
+                android:id="@+id/video_play_three_progress_bar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="4dp"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="1"
+                android:max="100"
+                android:progress="70"
+                android:progressDrawable="@drawable/player_lottery_progressbar" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/video_play_present_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/linear"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/icon_present_index"
+            android:gravity="center"
+            android:paddingBottom="3dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="270"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/text_size14" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/linear"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp">
+
+            <RelativeLayout
+                android:id="@+id/a_level_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+
+                <TextView
+                    android:id="@+id/zero"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="0 "
+                    android:textColor="@color/color_orange"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:id="@+id/video_play_a_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="(1000)"
+                    android:textColor="@color/text_color_default"
+                    android:textSize="@dimen/text_size12" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/a_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A"
+                android:textColor="@color/color_orange"
+                android:textSize="@dimen/text_size16" />
+
+            <RelativeLayout
+                android:id="@+id/b_level_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:id="@+id/b_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="B"
+                    android:textColor="@color/color_orange"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:id="@+id/video_play_b_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/b_level"
+                    android:text="(2000)"
+                    android:textColor="@color/text_color_default"
+                    android:textSize="@dimen/text_size12" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/c_level_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+
+                <TextView
+                    android:id="@+id/c_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="C"
+                    android:textColor="@color/color_orange"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:id="@+id/video_play_c_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/c_level"
+                    android:text="(3000)"
+                    android:textColor="@color/text_color_default"
+                    android:textSize="@dimen/text_size12" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lottery_prize_a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_bg_frame_bottom"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp">
+
+        <ImageView
+            android:id="@+id/a_level_present_image"
+            android:layout_width="128dp"
+            android:layout_height="72dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/a_level_present_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/a_level_present_image"
+            android:singleLine="true"
+            android:text="奖品A:100Q币直冲"
+            android:textColor="@color/text_color_default"
+            android:textSize="@dimen/text_size14" />
+
+        <TextView
+            android:id="@+id/a_level_present_num_and_prize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/a_level_present_image"
+            android:singleLine="true"
+            android:text="数量 : 1   价值 : 100元"
+            android:textColor="@color/text_color_gray"
+            android:textSize="@dimen/text_size14" />
+
+        <TextView
+            android:id="@+id/a_level_present_is_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/a_level_present_image"
+            android:singleLine="true"
+            android:text="未开启"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/text_size14" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lottery_prize_b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_bg_frame_bottom"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp">
+
+        <ImageView
+            android:id="@+id/b_level_present_image"
+            android:layout_width="128dp"
+            android:layout_height="72dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/b_level_present_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/b_level_present_image"
+            android:singleLine="true"
+            android:text="奖品A:100Q币直冲"
+            android:textColor="@color/text_color_default"
+            android:textSize="@dimen/text_size14" />
+
+        <TextView
+            android:id="@+id/b_level_present_num_and_prize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/b_level_present_image"
+            android:singleLine="true"
+            android:text="数量 : 1   价值 : 100元"
+            android:textColor="@color/text_color_gray"
+            android:textSize="@dimen/text_size14" />
+
+        <TextView
+            android:id="@+id/b_level_present_is_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/b_level_present_image"
+            android:singleLine="true"
+            android:text="未开启"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/text_size14" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lottery_prize_c"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_bg_frame_bottom"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp">
+
+        <ImageView
+            android:id="@+id/c_level_present_image"
+            android:layout_width="128dp"
+            android:layout_height="72dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/c_level_present_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/c_level_present_image"
+            android:singleLine="true"
+            android:text="奖品A:100Q币直冲"
+            android:textColor="@color/text_color_default"
+            android:textSize="@dimen/text_size14" />
+
+        <TextView
+            android:id="@+id/c_level_present_num_and_prize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/c_level_present_image"
+            android:singleLine="true"
+            android:text="数量 : 1   价值 : 100元"
+            android:textColor="@color/text_color_gray"
+            android:textSize="@dimen/text_size14" />
+
+        <TextView
+            android:id="@+id/c_level_present_is_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/c_level_present_image"
+            android:singleLine="true"
+            android:text="未开启"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/text_size14" />
+    </RelativeLayout>
+
+</LinearLayout>

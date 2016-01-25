@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_color_white"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <com.fxtv.framework.widget.circular.CircularImage
+        android:id="@+id/user_pic"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/user_pic"
+        android:textColor="@color/text_color_default"
+        android:textSize="@dimen/text_size14" />
+
+    <ImageView
+        android:id="@+id/dian_zan"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/icon_ding0" />
+
+    <TextView
+        android:id="@+id/comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dian_zan"
+        android:layout_toRightOf="@id/user_pic"
+        android:padding="10dp"
+        android:textColor="@color/text_color_default"
+        android:textSize="@dimen/text_size16" />
+
+    <TextView
+        android:id="@+id/publish_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/comment"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/user_pic"
+        android:background="@drawable/shape_bg_frame_bottom"
+        android:gravity="left"
+        android:paddingBottom="10dp"
+        android:textColor="@color/text_color_gray"
+        android:textSize="@dimen/text_size14" />
+
+    <TextView
+        android:id="@+id/comment_reancer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/publish_time"
+        android:layout_below="@id/comment"
+        android:text="回复"
+        android:textColor="@color/main_color"
+        android:textSize="@dimen/text_size14"
+        android:visibility="gone" />
+
+    <com.fxtv.framework.widget.MyListView
+        android:id="@+id/comment_reancer_reancer"
+        style="@style/style_lv_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/publish_time"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/user_pic"
+        android:focusable="false" />
+
+</RelativeLayout>

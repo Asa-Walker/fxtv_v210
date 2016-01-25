@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/fragment_play_page_comment_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_bg_frame_bottom"
+        android:padding="10dp"
+        android:text="共有123456条评论"
+        android:textColor="@color/main_color"
+        android:textSize="@dimen/text_size14" />
+
+    <RelativeLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="5dip" >
+
+        <TextView
+            android:id="@+id/fragment_play_page_comment_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_editext_comment"
+            android:padding="10dp"
+            android:text="我也来说两句"
+            android:textColor="@color/text_color_gray"
+            android:textSize="@dimen/text_size14" />
+    </RelativeLayout>
+
+    <com.fxtv.framework.widget.xlistview.XListView
+        android:id="@+id/fragment_play_comment_lv"
+        style="@style/style_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/layout_bottom"
+        android:layout_below="@id/fragment_play_page_comment_num" />
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/indicator_max_height"
+        android:background="@color/color_white">
+
+        <ImageView
+            android:id="@+id/fragment_tab_main_pulldown_imageview"
+            android:layout_width="30dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_bt_20"
+            android:scaleType="centerInside"
+            android:src="@drawable/xia_b" />
+
+        <com.fxtv.framework.widget.pagerindicator.TabPageIndicator
+            android:id="@+id/fragment_tab_main_tab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/fragment_tab_main_pulldown_imageview"
+            android:layout_toStartOf="@id/fragment_tab_main_pulldown_imageview"
+            android:background="@color/color_white" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/fragment_tab_main_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/page_bg" />
+
+</LinearLayout>

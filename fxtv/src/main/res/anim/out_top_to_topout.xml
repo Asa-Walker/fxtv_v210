@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 从top到顶部外面(不可见)，，从下到上 -->
+<translate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/decelerate_interpolator"
+    android:fromYDelta="0"
+    android:toYDelta="-100%"
+    android:duration="@integer/out_in_duration_200"
+    />
+

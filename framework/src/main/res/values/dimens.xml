@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+    <dimen name="mCellHeight">100dp</dimen>
+    <dimen name="mCellWidth">100dp</dimen>
+
+    <!-- emoji图片文字大小 -->
+    <dimen name="emojiSize">28sp</dimen>
+    <!-- emoji 输入框大小 -->
+    <dimen name="emojiEditSize">20sp</dimen>
+    <!-- 选择emoji图片大小 -->
+    <dimen name="emojiSelectSize">35sp</dimen>
+
+    <!-- empty距Top边距 -->
+    <dimen name="empty_margin_top">140dp</dimen>
+    <!-- empty文字距图片Top边距 -->
+    <dimen name="empty_tv_margin_top">20dp</dimen>
+    <!-- empty文字大小 -->
+    <dimen name="empty_tv_size">15sp</dimen>
+</resources>

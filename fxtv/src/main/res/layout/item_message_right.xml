@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/page_bg"
+        android:orientation="vertical" >
+
+         <com.fxtv.threebears.view.circular.CircularImage
+            android:id="@+id/item_my_message_imageview_r"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:paddingBottom="10dp"
+            android:src="@drawable/ic_launcher" />  
+
+        <TextView
+            android:id="@+id/item_my_message_date_r"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@id/item_my_message_imageview_r"
+            android:gravity="right"
+            android:text="5-16"
+            android:textColor="@color/text_color_gray"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/item_my_message_name_r"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_my_message_date_r"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@id/item_my_message_imageview_r"
+            android:background="@drawable/others_message"
+            android:text="fefff反反复复"
+            android:textColor="@color/text_color_gray"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</LinearLayout>

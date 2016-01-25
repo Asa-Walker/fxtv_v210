@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/gesture_volume_layout"
+        android:layout_width="40dip"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="50dp"
+        android:background="#cc000000"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:visibility="gone" >
+
+        <com.fxtv.threebears.view.VerticalSeekBar
+            android:id="@+id/gesture_volume_seekbar"
+            style="@style/MediaController_SeekBar"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp" />
+
+        <ImageView
+            android:id="@+id/gesture_iv_player_volume"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="5dip"
+            android:src="@drawable/player_volume" />
+
+        <TextView
+            android:id="@+id/geture_tv_volume_percentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="80%"
+            android:textColor="#ffececec" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/gesture_bright_layout"
+        android:layout_width="40dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="50dp"
+        android:background="#cc000000"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:visibility="gone" >
+
+        <com.fxtv.threebears.view.VerticalSeekBar
+            android:id="@+id/gesture_bright_vertical_seekbar"
+            style="@style/MediaController_SeekBar"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp" />
+
+        <ImageView
+            android:id="@+id/gesture_iv_player_bright"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dip"
+            android:src="@drawable/player_bright" />
+
+        <TextView
+            android:id="@+id/geture_tv_bright_percentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="80%"
+            android:textColor="#ffececec" />
+    </LinearLayout>
+
+</RelativeLayout>

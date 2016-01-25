@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_bg_frame_bottom"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <com.fxtv.framework.widget.circular.CircularImage
+        android:id="@+id/user_pic"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/user_pic"
+        android:text="缘本是卿"
+        android:textColor="@color/text_color_default"
+        android:textSize="@dimen/text_size14" />
+
+    <ImageView
+        android:id="@+id/dian_zan"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/icon_ding0" />
+
+    <TextView
+        android:id="@+id/publish_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@id/user_pic"
+        android:background="@color/text_color_white"
+        android:gravity="left"
+        android:text="6天前"
+        android:textColor="@color/text_color_gray"
+        android:textSize="@dimen/text_size14" />
+
+    <TextView
+        android:id="@+id/comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/publish_time"
+        android:layout_toRightOf="@id/user_pic"
+        android:padding="10dp"
+        android:text="交大教授看来多空拉锯的离开拉萨sdasdasdss"
+        android:textColor="@color/text_color_default"
+        android:textSize="@dimen/text_size16" />
+
+    <com.fxtv.framework.widget.MyListView
+        android:id="@+id/comment_reancer_reancer"
+        style="@style/style_lv_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/comment"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/user_pic"
+        android:divider="@null"
+        android:focusable="false" />
+
+</RelativeLayout>

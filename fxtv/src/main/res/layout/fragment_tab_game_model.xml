@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="horizontal"
+    android:gravity="center"
+   >
+
+    <LinearLayout
+        android:layout_width="120dip"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.fxtv.framework.widget.xlistview.XListView
+            android:id="@+id/fragment_tab_order_model"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_white"
+            android:layout_marginTop="4dp"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:fadingEdge="none"
+            android:listSelector="@color/color_transparency"
+            android:scrollbars="none" />
+        <!---->
+
+    </LinearLayout>
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="center"
+        android:background="@drawable/vertical"/>
+
+    <com.fxtv.framework.widget.xlistview.XListView
+        android:id="@+id/fragment_tab_game_model_lv"
+        android:divider="@null"
+        android:dividerHeight="5dip"
+        android:fadingEdge="none"
+        android:scrollbars="none"
+        android:listSelector="@color/color_transparency"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:paddingRight="10dp"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

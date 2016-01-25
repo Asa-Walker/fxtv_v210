@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/touming_mian_color"
+    android:padding="5dip" >
+
+    <TextView
+        android:id="@+id/video_history_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:text="系统记录到上次播放至00:00"
+        android:textColor="@color/text_color_white"
+        android:textSize="@dimen/text_size14" />
+
+    <TextView
+        android:id="@+id/video_history_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dip"
+        android:padding="10dip"
+        android:text="关闭"
+        android:textColor="@color/text_color_white"
+        android:textSize="@dimen/text_size14" />
+
+    <TextView
+        android:id="@+id/video_history_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dip"
+        android:layout_toLeftOf="@id/video_history_close"
+        android:padding="10dip"
+        android:text="从头观看"
+        android:textColor="@color/text_color_white"
+        android:textSize="@dimen/text_size14" />
+
+</RelativeLayout>

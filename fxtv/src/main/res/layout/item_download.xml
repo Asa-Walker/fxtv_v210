@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/text_color_white"
+        android:paddingRight="5dip" >
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="130dip"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/item_gv_game_img"
+                android:layout_width="130dip"
+                android:layout_height="90dip"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:layout_width="50dip"
+                android:layout_height="20dip"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/logo" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/pause_start_download"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="45dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/pause" />
+
+        <RelativeLayout
+            android:layout_width="130dip"
+            android:layout_height="22dip"
+            android:layout_alignBottom="@id/relative"
+            android:background="@color/color_translucence"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:textColor="@color/text_color_white" />
+
+            <TextView
+                android:id="@+id/fragment_tab_anchor_space_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/time"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/text_color_white"
+                android:textSize="@dimen/text_size14" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/item_gv_game_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="5dip"
+            android:layout_toRightOf="@id/relative"
+            android:textColor="@color/text_color_default"
+            android:textSize="@dimen/text_size14" />
+
+        <TextView
+            android:id="@+id/last_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/relative"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"
+            android:textColor="@color/text_color_default"
+            android:textSize="@dimen/text_size14" />
+
+        <TextView
+            android:id="@+id/author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/relative"
+            android:layout_marginLeft="5dip"
+            android:layout_toLeftOf="@id/last_time"
+            android:layout_toRightOf="@id/relative"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/text_color_default"
+            android:textSize="@dimen/text_size14" />
+    </RelativeLayout>
+
+</LinearLayout>

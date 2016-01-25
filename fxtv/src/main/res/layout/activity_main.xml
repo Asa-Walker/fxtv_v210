@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg">
+
+    <!-- ActionBar layout -->
+
+    <include
+        android:id="@+id/activity_main_actonbar"
+        layout="@layout/view_actionbar" />
+
+    <!-- Bottom tab layout -->
+
+    <LinearLayout
+        android:id="@+id/activity_main_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/main_color" />
+
+        <LinearLayout
+            android:id="@+id/main_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="3dp">
+
+            <RelativeLayout
+                android:id="@+id/layout_home"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onTabClicked"
+                android:paddingBottom="4dp"
+                android:paddingTop="8dip">
+
+                <ImageView
+                    android:id="@+id/im_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:focusable="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/main_bottom_tab_main" />
+
+                <TextView
+                    android:id="@+id/tv_home"
+                    style="@style/activity_main_tab"
+                    android:layout_below="@id/im_home"
+                    android:layout_centerHorizontal="true"
+                    android:text="首页" />
+
+                <!-- <TextView
+                     android:id="@+id/msg_number_home"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentRight="true"
+                     android:layout_marginRight="10dp"
+                     android:background="@drawable/unread_count_bg"
+                     android:gravity="center"
+                     android:textColor="@android:color/white"
+                     android:textSize="12sp"
+                     android:visibility="gone" />-->
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_game"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onTabClicked"
+                android:paddingBottom="4dp"
+                android:paddingTop="8dip">
+
+                <ImageView
+                    android:id="@+id/im_game"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:focusable="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/main_bottom_tab_game" />
+
+                <TextView
+                    android:id="@+id/tv_game"
+                    style="@style/activity_main_tab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/im_game"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/activity_main_tab_game" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_self"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onTabClicked"
+                android:paddingBottom="4dp"
+                android:paddingTop="8dip">
+
+                <ImageView
+                    android:id="@+id/im_self"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:focusable="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/main_bottom_tab_self" />
+
+                <TextView
+                    android:id="@+id/tv_self"
+                    style="@style/activity_main_tab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/im_self"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/activity_main_tab_self" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_find"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onTabClicked"
+                android:paddingBottom="4dp"
+                android:paddingTop="8dip">
+
+                <ImageView
+                    android:id="@+id/im_find"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:focusable="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/main_bottom_tab_explorer" />
+
+                <TextView
+                    android:id="@+id/tv_find"
+                    style="@style/activity_main_tab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/im_find"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/activity_main_tab_explorer" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_personal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onTabClicked"
+                android:paddingBottom="4dp"
+                android:paddingTop="8dip">
+
+                <ImageView
+                    android:id="@+id/im_personal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:focusable="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/main_bottom_tab_anchor" />
+
+                <TextView
+                    android:id="@+id/tv_personal"
+                    style="@style/activity_main_tab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/im_personal"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/activity_main_tab_anchor" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <!-- Center layout fragment -->
+
+    <RelativeLayout
+        android:id="@+id/activity_main_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/activity_main_bottom"
+        android:layout_below="@id/activity_main_actonbar"
+        android:background="@color/page_bg" />
+
+    <RelativeLayout
+        android:id="@+id/first_guide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/touming_black_color"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/guide_mine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="5dp"
+            android:padding="25dp"
+            android:visibility="gone" />
+
+
+        <ImageView
+            android:id="@+id/guide_wolf_skin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="100dp"
+            android:paddingBottom="40dp"
+            android:paddingRight="40dp"
+            android:paddingTop="40dp"
+            android:visibility="gone" />
+
+
+        <ImageView
+            android:id="@+id/guide_fx_shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="180dp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/guide_anchor_space"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="150dp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/guide_hot_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="180dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

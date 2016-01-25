@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- text size -->
+    <dimen name="text_size12">11sp</dimen>
+    <dimen name="text_size14">13sp</dimen>
+    <dimen name="text_size16">15sp</dimen>
+    <dimen name="text_size18">17sp</dimen>
+    <dimen name="text_size20">19sp</dimen>
+    <dimen name="text_size22">21sp</dimen>
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="indicator_max_height">35dp</dimen>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+    <dimen name="mCellHeight">100dp</dimen>
+    <dimen name="mCellWidth">100dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- emoji表情列表高 -->
+    <dimen name="line_emoji_height">166dp</dimen>
+
+    <!-- 进入出去动画时间 -->
+    <integer name="out_in_duration">500</integer>
+    <integer name="out_in_duration_200">200</integer>
+
+</resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/page_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:text="请选择您感兴趣的分类"
+            android:textColor="@color/text_color_default"
+            android:textSize="@dimen/text_size14" />
+
+        <TextView
+            android:id="@+id/activity_guide_first_skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="10dp"
+            android:text="跳过"
+            android:textColor="@color/text_color_default"
+            android:textSize="@dimen/text_size14" />
+
+        <ImageView
+            android:id="@+id/activity_guide_first_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/activity_guide_first_skip"
+            android:src="@drawable/cancel_text" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" 
+        android:layout_below="@id/layout"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <com.fxtv.framework.widget.MyGridView
+                android:id="@+id/activity_guide_first_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_bg_frame_bottom"
+                android:listSelector="@color/color_transparency"
+                android:numColumns="4"
+                android:paddingBottom="50dp"
+                android:scrollbars="none" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/activity_guide_first_next_step"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/color_orange"
+        android:text="下一步"
+        android:textColor="@color/text_color_white"
+        android:textSize="@dimen/text_size18" />
+
+
+    <RelativeLayout
+        android:id="@+id/first_guide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/touming_black_color"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/guide_mine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center" />
+        </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg"
+    android:orientation="vertical" >
+
+    <com.fxtv.framework.widget.xlistview.XListView
+        android:id="@+id/download_xlistvise"
+        style="@style/style_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="70dp"
+        android:layout_marginTop="50dp" />
+
+    <include layout="@layout/downlaod_favorites_history_actionbar" />
+
+    <Button
+        android:id="@+id/check_downloading_btn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/main_color"
+        android:text="查看正在缓存的视频"
+        android:textColor="@color/text_color_white"
+        android:textSize="@dimen/text_size18" />
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- @author 赵尚宏 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_window_focused="false" android:color="#676767"/>
+    <item android:state_pressed="true" android:color="@color/color_xunyou"/>
+    <item android:state_selected="true" android:color="@color/color_xunyou"/>
+    <item android:color="@color/text_color_default"/> <!-- not selected -->
+
+</selector>

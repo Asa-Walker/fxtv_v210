@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_bg_frame_bottom"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/rank_list_num"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_launcher" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/rank_list_num"
+        android:padding="10dip">
+
+        <RelativeLayout
+            android:id="@+id/left"
+            android:layout_width="120dip"
+            android:layout_height="67.5dip">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="120dip"
+                android:layout_height="67.5dip" />
+
+            <ImageView
+                android:id="@+id/present_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignTop="@id/img"
+                android:src="@drawable/icon_prize"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="22dip"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/video_bottom_bg"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip">
+
+                <TextView
+                    android:id="@+id/lable1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="lable1"
+                    android:textColor="@color/text_color_white"
+                    android:textSize="@dimen/text_size12" />
+
+                <TextView
+                    android:id="@+id/lable2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    android:text="lable2"
+                    android:textColor="@color/text_color_white"
+                    android:textSize="@dimen/text_size12" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="35dip"
+                android:layout_height="12dip"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/banner_logo"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/left"
+            android:ellipsize="end"
+            android:lines="2"
+            android:text="title"
+            android:textColor="@color/text_color_default_dark"
+            android:textSize="@dimen/text_size14" />
+
+        <TextView
+            android:id="@+id/conmment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/left"
+            android:textColor="@color/text_color_default_dark"
+            android:textSize="@dimen/text_size14" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/rank_list_num_text"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:gravity="center_vertical|left"
+        android:text="4"
+        android:textColor="@color/text_color_default"
+        android:textSize="@dimen/text_size22"
+        android:textStyle="italic"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">飞熊视频</string>
+
+    <!-- 登录login -->
+    <string name="activity_login_btn_text">登录</string>
+    <string name="activity_login_edit_username_hint">手机号</string>
+    <string name="activity_login_edit_password_hint">请输入密码</string>
+    <string name="activity_login_text_register_text">注册</string>
+
+    <!-- 注册register -->
+    <string name="activity_register_username_hint">请输入昵称6&#8211;24位</string>
+    <string name="activity_register_password_hint">请输入密码6&#8211;12位</string>
+    <string name="activity_register_repeat_password_hit">请再次输入密码</string>
+    <string name="activity_register_registered_text">已有帐号</string>
+    <string name="activity_register_btn_register_text">注  册</string>
+
+    <!-- 个人设置 setup -->
+    <string name="activity_setup_userstate_text">未登录</string>
+    <string name="activity_setup_btn_login_text">登录</string>
+    <string name="activity_setup_downloademanager_text">缓存管理</string>
+    <string name="activity_setup_favorites_text">收藏管理</string>
+    <string name="activity_setup_history_text">记录管理</string>
+    <string name="activity_setup_wifi_text">3G/4G网络下播放/缓存</string>
+    <string name="activity_setup_useagreement_text">使用协议</string>
+    <string name="activity_setup_aboutus_text">关于我们</string>
+    <string name="activity_setup_suggestion_text">意见反馈</string>
+    <string name="activity_setup_host_text">主播入驻</string>
+
+    <!-- 缓存管理 cache -->
+    <string name="activity_cache_rb1_text">正在缓存</string>
+    <string name="activity_cache_rb2_text">完成缓存</string>
+    <string name="activity_cache_space_remind_text">占用空间255MB,还剩2.4GB</string>
+
+    <!-- 意见反馈 -->
+    <string name="activity_suggestion_cotent_hint">请写下您的建议或反馈(300字以内):</string>
+    <string name="activity_suggestion_ourqq_hint">您也可以加入我们的QQ群457786473反馈意见和建议</string>
+    <string name="activity_suggestion_connact_hint">请写下您的联系方式(手机，QQ，邮箱)</string>
+    <string name="activity_suggestion_btn_submit_text">发送</string>
+
+    <!-- 首页Strings -->
+    <string name="activity_main_tab_main"></string>
+    <string name="activity_main_tab_game">游戏</string>
+    <string name="activity_main_tab_self">自频道</string>
+    <string name="activity_main_tab_explorer">发现</string>
+    <string name="activity_main_tab_anchor">我</string>
+    <!-- 播放页 -->
+    <string name="play_page_radiobutton1">详情</string>
+    <string name="play_page_radiobutton2">评论</string>
+    <string name="play_page_radiobutton3">相关</string>
+    <string name="play_page_prizeinfo">抽奖活动</string>
+    <string name="play_page_prizename">奖品</string>
+    <string name="self_page_myvideo">我的视频</string>
+    <string name="self_page_mybook">我的订阅</string>
+
+    <!-- 自频道 -->
+    <string name="cancelbook">退订</string>
+    <!-- 主播 -->
+    <string name="anchor_btn1">+守护</string>
+    <string name="anchor_btn2">+订阅</string>
+    <string name="anchor_lable">公告</string>
+    <string name="anchor_tab1">守护主播</string>
+    <string name="anchor_tab2">全部主播</string>
+    <string name="anchor_lable2">推荐主播</string>
+    <string name="anchor_tab6">A-K</string>
+    <string name="anchor_tab7">L-S</string>
+    <string name="anchor_tab8">T-Z</string>
+    <string name="anchor_tab9">其他</string>
+    <string name="anchor_tab10">还没有守护的主播</string>
+    <string name="anchor_tab11">你还未登陆，请登录。</string>
+    <string name="anchor_tab12">游戏主播</string>
+    <string name="anchor_tab13">全部退订</string>
+    <string name="anchor_tab14">取消</string>
+    <string name="anchor_tab15">已守护</string>
+    <string name="anchor_tab16">已订阅</string>
+    <string name="anchor_tab17">守护</string>
+    <string name="anchor_tab18">订阅</string>
+    <!-- 搜索页 -->
+    <string name="title_activity_search">SearchActivity</string>
+    <!-- 主播空間 -->
+    <string name="anchor_video">视频</string>
+    <string name="anchor_info">信息</string>
+    <string name="anchor_interaction">互动</string>
+
+    <!-- 发现 -->
+    <string name="function_instruction_title">飞熊视频功能介绍</string>
+    <string name="function_instruction_1">1、视频缓存</string>
+    <string name="function_instruction_2">2、守护主播</string>
+    <string name="function_instruction_3">3、订阅主播/专辑</string>
+    <string name="function_instruction_4">4、自频道只看主播</string>
+    <string name="function_instruction_content_1">WIFI环境下快速缓存，无网络时也可以看个究竟。</string>
+    <string name="function_instruction_content_2">守护你喜爱的主播，更多神秘特权等你发现。</string>
+    <string name="function_instruction_content_3">不管是追主播还是追内容，随时随地看新内容。</string>
+    <string name="function_instruction_content_4">订阅内容太多，筛除媒体资讯，只看主播UGC内容点我就行。</string>
+
+    <!-- 所有的提示 -->
+    <string name="notice_no_login">您还没有登录,请登录</string>
+    <string name="notice_net_not_connect">网络未连接</string>
+    <string name="notice_NOT_ALLOW_DOWNLOAD_AND_PLAY_UNDER_3GOR4G">当前设置不允许非wifi环境播放视频</string>
+    <string name="notice_start_download">开始下载</string>
+    <string name="notice_pause_download">暂停下载</string>
+    <string name="notice_continue_download">继续下载</string>
+    <string name="notice_cancel_download">取消了下载</string>
+    <string name="notice_download_failed">下载失败</string>
+    <string name="notice_download_success">下载成功</string>
+    <string name="notice_net_disconnect_download_pause">网络已断开，下载暂停</string>
+    <string name="notice_anchor_can_not_order">该主播不支持订阅</string>
+    <string name="notice_you_can_download_or_playvideo_under_3g4gnet">开启3G,4G网络状态下载，播放设置</string>
+    <string name="notice_you_can_not_download_or_playvideo_under_3g4gnet">关闭3G,4G网络状态下载，播放设置</string>
+    <string name="notice_you_can_download_under_wifi">开启非wifi下缓存</string>
+    <string name="notice_you_can_download_not_under_wifi">关闭非wifi下缓存</string>
+    <string name="notice_you_can_receive_message">开启消息推送</string>
+    <string name="notice_you_can_not_receive_message">关闭消息推送</string>
+    <string name="notice_unregistered">已注销</string>
+    <string name="notice_no_more_data">没有更多数据</string>
+    <string name="notice_subscribe_first">暂无订阅</string>
+    <string name="notice_userid_or_password_can_not_empty">手机号或密码不能为空</string>
+    <string name="notice_test_code_can_not_empty">验证码不能为空</string>
+    <string name="notice_wrong_userid_format">手机号输入有误</string>
+    <string name="notice_wrong_password">密码应为6&#8211;16位数字和英文组合</string>
+    <string name="notice_userid_length_between2to24">用户名长度在6&#8211;24位(中文算2位)</string>
+    <string name="notice_passwords_do_not_same">两次密码不一致</string>
+    <string name="notice_you_have_already_up_or_down">你已经顶过或者踩过，谢谢</string>
+    <string name="notice_publish_success">发表成功</string>
+    <string name="notice_up_success">顶成功了</string>
+    <string name="notice_down_success">踩成功了</string>
+    <string name="notice_comment_can_not_be_empty">评论不能为空！</string>
+    <string name="notice_order_success">订阅成功</string>
+    <string name="notice_delete_success">删除成功</string>
+    <string name="notice_cancel_order_success">取消订阅成功</string>
+    <string name="notice_quit_order_success">退订成功</string>
+    <string name="notice_one_more_quit">再按一次返回键退出程序</string>
+    <string name="notice_send_success">发送成功</string>
+    <string name="notice_protect_success">守护成功</string>
+    <string name="notice_at_least_three">最低不能选择少于3个</string>
+    <string name="notice_change_success">修改成功</string>
+    <string name="notice_search_context_can_not_be_empty">搜索内容不能为空</string>
+    <string name="notice_input_message">请输入留言</string>
+    <string name="notice_anchor_nospace">该主播尚未开通空间</string>
+    <string name="notice_no_guard_anchor">还未守护主播</string>
+
+    <!-- 抽奖说明 -->
+    <string name="present_one">有奖视频将在视频缩略图上显示带"奖"字的角标,进入有奖视频后发表评论即可参与抽奖</string>
+    <string name="present_two">同一抽奖视频发布多条评论不会增加抽奖几率</string>
+    <string name="present_three">已经开奖的视频,会在视频详情下方显示中奖人,另外中奖人将会受到系统通知和客服通知,系统通知与客服通知可在"我的消息"中查看。\n你也可以在"我的抽奖"里面查看自己是否中奖了
+</string>
+    <string name="present_four">客服将会与中奖人沟通具体发奖事宜</string>
+    <string name="present_five">更多疑问可联系客服:\n电话:021&#8211;64403312\nQQ:1003996247\n抽奖活动最终解释权由飞熊视频所有</string>
+
+
+    <!-- 颜色数组 -->
+    <string-array name="color_list">
+        <item>#229cf2</item>
+        <item>#ffbbba</item>
+        <item>#ffc89f</item>
+        <item>#96c1ff</item>
+        <item>#64d7fe</item>
+        <item>#ffa3d7</item>
+        <item>#a9f19b</item>
+        <item>#d6b6fd</item>
+        <item>#0da282</item>
+        <item>#8d82ff</item>
+        <item>#ff7ce5</item>
+        <item>#bfd535</item>
+        <item>#7d6b3b</item>
+        <item>#548cb6</item>
+        <item>#9ed9d5</item>
+        <item>#e09240</item>
+        <item>#f67f67</item>
+        <item>#b09f8d</item>
+    </string-array>
+
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_activity_explorer_anchor_circle">ActivityExplorerAnchorCircle</string>
+    <string name="title_activity_activity_explorer_mission">ActivityExplorerMission</string>
+    <string name="title_activity_activity_explorer_my_cookie">ActivityExplorerMyCookie</string>
+    <string name="title_activity_activity_explorer_bear_shop">ActivityExplorerBearShop</string>
+    <string name="title_activity_activity_explorer_function">ActivityExplorerFunction</string>
+    <string name="title_activity_activity_self_my_book">ActivitySelfMyBook</string>
+    <string name="title_activity_activity_explorer_function_instruction">ActivityExplorerFunctionInstruction</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="reply">回复</string>
+    <string name="report">评论</string>
+    <string name="zan">举报</string>
+    <string name="copy">点赞</string>
+
+    <string name="empty_str_favorites">您还没有收藏视频，快去收藏喜爱的视频吧！</string>
+    <string name="empty_str_biscuit">您还没有饼干，参加各类官方活动以及完成每日任务即可获取饼干！（可以兑换熊掌噢）</string>
+    <string name="empty_str_present">您还没有参加过抽奖活动，进入“抽奖中”标记视频，发表精彩评论即可参与抽奖噢~</string>
+    <string name="empty_str_self">您还没有订阅主播以及内容，快去订阅吧！</string>
+    <string name="empty_str_wolf">您还没有熊掌，熊掌可兑换各种精美礼品，快去飞熊商城看看吧！</string>
+    <string name="empty_str_history">您还没有观看记录，超多精彩视频等你看！</string>
+    <string name="empty_str_latest">“%s”　很懒，还没有发表动态噢~</string>
+    <string name="empty_str_vote">“%s”　没有发起投票噢~</string>
+    <string name="empty_str_topic">快成为第一个发表吐糟的人吧</string>
+    <string name="empty_str_topic_about">暂未发布相关话题，飞熊正在火速收集中</string>
+
+</resources>

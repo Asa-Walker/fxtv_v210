@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/page_bg"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/catalog"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:background="#E0E0E0"
+        android:paddingBottom="5dip"
+        android:paddingLeft="5dip"
+        android:paddingTop="5dip"
+        android:text="A"
+        android:textColor="#454545" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.fxtv.framework.widget.circular.CircularImage
+            android:id="@+id/answer_user_pic"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dip"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/answer_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:layout_toRightOf="@id/answer_user_pic"
+            android:text="阿呆"
+            android:textColor="@color/text_color_default"
+            android:textSize="@dimen/text_size16" />
+
+        <TextView
+            android:id="@+id/subscribe_and_videos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/answer_content"
+            android:layout_marginTop="8dip"
+            android:layout_toRightOf="@id/answer_user_pic"
+            android:text="刚刚"
+            android:textColor="@color/text_color_gray"
+            android:textSize="@dimen/text_size14" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_below="@id/subscribe_and_videos"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dip"
+            android:background="@color/color_line" />
+    </RelativeLayout>
+
+</LinearLayout>

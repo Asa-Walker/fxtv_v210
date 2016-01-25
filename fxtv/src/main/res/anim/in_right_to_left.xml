@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 从最右边进入到最左边 -->
+<!-- interpolator 在动画开始的地方快然后慢-->
+<translate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/decelerate_interpolator"
+    android:duration="@integer/out_in_duration"
+    android:fromXDelta="100%"
+    android:toXDelta="0"/>
+

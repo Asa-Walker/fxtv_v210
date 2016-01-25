@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:emoji="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_color_white"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_actionbar" />
+
+    <emojicon.EmojiconEditText
+        android:id="@+id/act_info"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="left|top"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="13dp"
+        android:hint="发评论"
+        android:background="@color/page_bg"
+        android:textColor="@color/text_color_default"
+        android:textSize="@dimen/text_size16"
+        emoji:emojiconSize="@dimen/emojiEditSize"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/color_white"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/color_line" />
+
+
+        <ImageView
+            android:id="@+id/im_emoji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/selector_bt_white"
+            android:padding="10dp"
+            android:src="@drawable/select_emoji" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/color_line" />
+
+        <LinearLayout
+            android:id="@+id/line_emoji"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_emoji_height"
+            android:background="@color/text_color_white"
+            android:orientation="horizontal"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_my_color"
+    android:orientation="vertical"
+    android:paddingTop="25dp" >
+
+    <include layout="@layout/view_actionbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="什么是等级"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_size14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="等级是你在飞熊视频中活跃度的体现"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_size12" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/color_line" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="等级有什么用"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_size14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dp"
+                android:text="等级越高称谓越高,同样会有各种特权(陆续上线中)"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_size12" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:text="等级经验表"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_size14" />
+
+            <ImageView
+                android:id="@+id/level_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/my_level_table" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="如何增加经验?"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_size14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dp"
+                android:text="通过完成每日任务可以获得经验,每日任务在发现页里可以找到。"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_size12" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

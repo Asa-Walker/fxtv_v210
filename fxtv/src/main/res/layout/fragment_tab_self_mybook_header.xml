@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/text_color_gray" />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/shape_bg_frame_bottom"
+        android:paddingBottom="1dp"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/anchor_tab12"
+            android:textColor="@color/text_color_default"
+            android:textSize="@dimen/text_size16" />
+
+        <TextView
+            android:id="@+id/fragment_tab_self_mybook_header_del"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_bt_white"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:text="@string/anchor_tab13"
+            android:textColor="@color/text_color_gray"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <com.fxtv.threebears.view.HorizontalScrollViewInVp
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_bg_frame_bottom"
+        android:minHeight="120dip"
+        android:padding="10dip"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/fragment_tab_self_mybook_header_hs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+    </com.fxtv.threebears.view.HorizontalScrollViewInVp>
+
+    <RelativeLayout
+        android:id="@+id/game_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dip"
+        android:background="@color/color_white"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/activity_main_tab_game"
+            android:textColor="@color/text_color_default"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/deleteallgames"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_bt_white"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:text="@string/anchor_tab13"
+            android:textColor="@color/text_color_gray"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

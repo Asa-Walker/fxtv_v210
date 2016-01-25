@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip" >
+
+        <RelativeLayout
+            android:id="@+id/chat_left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <com.fxtv.framework.widget.circular.CircularImage
+                android:id="@+id/img_left"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dip"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/data_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@id/img_left"
+                android:text="一个小时前 "
+                android:textColor="@color/text_color_gray"
+                android:textSize="@dimen/text_size14" />
+
+            <TextView
+                android:id="@+id/content_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/data_left"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@id/img_left"
+                android:background="@drawable/others_message"
+                android:paddingBottom="5dip"
+                android:paddingLeft="10dip"
+                android:paddingRight="5dip"
+                android:paddingTop="5dip"
+                android:text="聊天的内容"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_size16" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/chat_right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <com.fxtv.framework.widget.circular.CircularImage
+                android:id="@+id/img_right"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dip"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/data_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:layout_toLeftOf="@id/img_right"
+                android:text="一个小时前 "
+                android:textColor="@color/text_color_gray"
+                android:textSize="@dimen/text_size14" />
+
+            <TextView
+                android:id="@+id/content_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/data_right"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="2dp"
+                android:layout_toLeftOf="@id/img_right"
+                android:background="@drawable/my_message"
+                android:paddingBottom="5dip"
+                android:paddingLeft="5dip"
+                android:paddingRight="10dip"
+                android:paddingTop="5dip"
+                android:text="聊天的内容"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_size16" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

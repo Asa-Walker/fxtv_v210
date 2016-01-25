@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg">
+
+    <FrameLayout
+        android:id="@+id/video_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_dark">
+
+        <com.fxtv.threebears.view.mediaplayer.IjkVideoView
+            android:id="@+id/video_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.fxtv.threebears.view.mediaplayer.MediaController
+            android:id="@+id/controller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/video_other"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/video_area">
+
+        <!-- 下载、点赞、收藏、分享 -->
+
+        <RelativeLayout
+            android:id="@+id/video_action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_bg_frame_bottom"
+            android:orientation="horizontal"
+            android:paddingBottom="10dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:paddingTop="10dip">
+
+            <ImageView
+                android:id="@+id/image_download"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_download0" />
+
+            <ImageView
+                android:id="@+id/image_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_share" />
+
+            <ImageView
+                android:id="@+id/image_zan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dip"
+                android:layout_toLeftOf="@id/image_share"
+                android:src="@drawable/icon_ding0" />
+
+            <ImageView
+                android:id="@+id/image_soucang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dip"
+                android:layout_toLeftOf="@id/image_zan"
+                android:src="@drawable/icon_favorite0" />
+
+            <ImageView
+                android:id="@+id/image_red_bag"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dip"
+                android:layout_toLeftOf="@id/image_soucang"
+                android:scaleType="fitXY"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <!-- 滑动部分 -->
+
+        <ScrollView
+            android:id="@+id/scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/video_action"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <!-- 视频简介UI 容器 -->
+
+                <FrameLayout
+                    android:id="@+id/video_container_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_bg_frame_top_bottom"
+                    android:padding="10dip" />
+
+                <!-- 视频主播UI 容器 -->
+
+                <FrameLayout
+                    android:id="@+id/video_container_anchor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:background="@drawable/shape_bg_frame_top_bottom"
+                    android:padding="10dip" />
+
+                <!-- 评论、相关、等等 -->
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/shape_bg_frame_bottom"
+                    android:paddingTop="10dp"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/activity_new_anchor_space_msg_text"
+                            android:layout_width="90dp"
+                            android:layout_height="75dp"
+                            android:drawablePadding="5dp"
+                            android:drawableTop="@drawable/anchor_msg_icon"
+                            android:gravity="center_horizontal"
+                            android:text="留言"
+                            android:textColor="@color/text_color_default"
+                            android:textSize="@dimen/text_size14"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/activity_new_anchor_space_act_text"
+                            android:layout_width="90dp"
+                            android:layout_height="75dp"
+                            android:drawablePadding="5dp"
+                            android:drawableTop="@drawable/icon_lottery"
+                            android:gravity="center_horizontal"
+                            android:text="抽奖"
+                            android:textColor="@color/text_color_default"
+                            android:textSize="@dimen/text_size14"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/activity_new_anchor_space_vote_text"
+                            android:layout_width="90dp"
+                            android:layout_height="75dp"
+                            android:drawablePadding="5dp"
+                            android:drawableTop="@drawable/icon_vote"
+                            android:gravity="center_horizontal"
+                            android:text="投票"
+                            android:textColor="@color/text_color_default"
+                            android:textSize="@dimen/text_size14"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/activity_new_anchor_space_recomend_text"
+                            android:layout_width="90dp"
+                            android:layout_height="75dp"
+                            android:drawablePadding="5dp"
+                            android:drawableTop="@drawable/icon_album"
+                            android:gravity="center_horizontal"
+                            android:text="专辑"
+                            android:textColor="@color/text_color_default"
+                            android:textSize="@dimen/text_size14"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/activity_new_anchor_space_shop_text"
+                            android:layout_width="90dp"
+                            android:layout_height="75dp"
+                            android:drawablePadding="5dp"
+                            android:drawableTop="@drawable/icon_relate"
+                            android:gravity="center_horizontal"
+                            android:text="相关"
+                            android:textColor="@color/text_color_default"
+                            android:textSize="@dimen/text_size14"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <!-- 相关UI 容器 -->
+
+                <FrameLayout
+                    android:id="@+id/video_container_about"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shape_bg_frame_top_bottom" />
+
+                <!-- 抽奖UI 容器 -->
+
+                <FrameLayout
+                    android:id="@+id/video_container_lottery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:background="@drawable/shape_bg_frame_top_bottom" />
+
+                <!-- 评论UI 容器 -->
+
+                <FrameLayout
+                    android:id="@+id/video_container_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:background="@drawable/shape_bg_frame_top_bottom"
+                    android:padding="10dip" />
+            </LinearLayout>
+        </ScrollView>
+
+        <FrameLayout
+            android:id="@+id/video_container_action"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+</RelativeLayout>

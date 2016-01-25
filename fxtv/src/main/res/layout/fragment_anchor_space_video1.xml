@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_color_gray"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <View
+                android:id="@+id/lineeee"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#00ff00" >
+            </View>
+
+            <TextView
+                android:id="@+id/fragment_anchor_space_video"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/text_color_white"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="最新视频"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_size20" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/icon_arrow_right1" />
+
+            <ListView
+                android:id="@+id/fragment_anchor_space_video_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/text_color_white"
+                android:scrollbars="none" >
+            </ListView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#000000" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/fragment_anchor_space_ablum"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/text_color_white"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="专辑列表"
+                android:textColor="@color/text_color3"
+                android:textSize="@dimen/text_size20" />
+
+            <ListView
+                android:id="@+id/fragment_anchor_space_video_ablum_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/text_color_white"
+                android:scrollbars="none" >
+            </ListView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#000000" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

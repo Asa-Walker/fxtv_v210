@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_bt_white">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"/>
+
+     <ImageView
+           android:id="@+id/logo"
+           android:layout_width="35dip"
+           android:layout_height="12dip"
+           android:layout_alignParentRight="true"
+           android:layout_marginRight="5dp"
+           android:layout_marginTop="5dp"
+           android:background="@drawable/banner_logo" />
+
+    <ImageView
+        android:id="@+id/prize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/icon_prize"
+        android:layout_marginRight="5dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/video_bottom_bg"
+        android:padding="5dip">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/text_size12" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="10:100"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/text_size12" />
+    </LinearLayout>
+
+</RelativeLayout>
+

@@ -1,0 +1,141 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <include
+        android:id="@+id/activity_main_actonbar"
+        layout="@layout/view_actionbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_white"
+        android:overScrollMode="ifContentScrolls"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="20dp"
+                android:text="@string/function_instruction_title"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_size22" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_line" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/function_instruction_1"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_size18" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingLeft="40dp"
+                android:paddingTop="5dp"
+                android:text="@string/function_instruction_content_1"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_size14" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:src="@drawable/fuction_instructon_1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/function_instruction_2"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_size18" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingLeft="40dp"
+                android:paddingTop="5dp"
+                android:text="@string/function_instruction_content_2"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_size14" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:src="@drawable/fuction_instructon_2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/function_instruction_3"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_size18" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingLeft="40dp"
+                android:paddingTop="5dp"
+                android:text="@string/function_instruction_content_3"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_size14" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:src="@drawable/fuction_instructon_3" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/function_instruction_4"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_size18" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingLeft="40dp"
+                android:paddingTop="5dp"
+                android:text="@string/function_instruction_content_4"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_size14" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:src="@drawable/fuction_instructon_4" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
